@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+* {
+    padding: 0; margin: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo-Variable';
+}
+*:focus { outline: none; }
+ul, ol { list-style: none; }
+a { text-decoration: none; }
+
+.melon_bar { 
+    border-top: 6px solid #02cd39;
+}
+
+/* fixed header */
+
+.header {
+    padding-top: 35px; width: 94.79%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo { padding-top: 10px; }
+
+.header .header_menu { display: flex; }
+
+/* .header > .search > form > input */
+
+.header .search form { position: relative; }
+
+.header .search input {
+    width: 290px; height: 33px;
+    border-radius: 30px;
+    padding-left: 30px;
+    border: 1px solid #5b5b5b;
+    background-color: inherit;
+    font-size: .7rem; color: #a8a8a8;
+}
+
+.header .search input::placeholder{ color: #a8a8a8; }
+
+.header .search input:focus{ outline: none; }
+
+.header .search .fa-magnifying-glass{
+    font-size: 0.5rem; color: #a8a8a8;
+    line-height: 30px;
+    position: absolute;
+    left: 15px;
+}
+
+/* .top_menu 1920px */
+
+.header .header_menu .top_menu { margin-left: 35px; }
+
+.header .header_menu .top_menu > li,
+.header .header_menu .top_menu > li a {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 0.8rem;
+    color: #5b5b5b;
+    cursor: pointer;
+}
+.header .top_menu li:not(:first-child) { margin-left: 22px; }
+.top_menu_tab { display: none; }
+.burger > i {
+    display: none;
+}

@@ -1,0 +1,62 @@
+@media (min-width:769px) and (max-width:1024px){
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+* {
+    padding: 0; 
+    margin: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo-Variable';
+}
+*:focus { outline: none; }
+ul, ol { list-style: none; }
+a { text-decoration: none; }
+
+.melon_bar { 
+    border-top: 6px solid #02cd39;
+}
+.header {
+    padding-top: 35px; width: 94.79%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header .header_menu { display: flex; }
+.header .header_menu .top_menu_tab { margin-left: 30px; }
+.header .header_menu .top_menu_tab > li {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #5b5b5b;
+}
+.header .header_menu .top_menu_tab > li > i { font-size: 23px; }
+.header .top_menu_tab li:not(:first-child) { margin-left: 33px; }
+.top_menu { display: none; }
+.top_menu_tab > li > i {
+    display: inline-block;
+    color: #5b5b5b;
+    font-size: 20px;
+    cursor: pointer;
+}
+.top_menu_tab { display: inline-block; }
+.header .search form { display: none; }
+.header .logo { display: none;}
+.header > .burger > span {
+    display: block;
+    border: 2px solid #5b5b5b;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+.header > .burger > .first { 
+    width: 42px;
+}
+.header > .burger > .second { 
+    width: 33px;
+}
+.header > .burger > .third { 
+    width: 25px;
+}
+}

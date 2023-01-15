@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/common2.css">
+    <link rel="stylesheet" href="../css/common(768).css">
+    <link rel="stylesheet" href="../css/common(320).css">
+    <link rel="stylesheet" href="../css/album(swiper).css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../css/sidemenu.css">
+
+    <title>앨범 판매 페이지</title>
+</head>
+<body>
+    <div id="container">
+
+
+        <div id="drawer_menu">
+            <div class="side_menu">
+                <div class="menu_opner">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <i class="fa-solid fa-xmark menu_opner"></i>
+                <img src="../../images/album_ticket/common/melon_logo_menu.png" alt="멜론 로고">
+                <ul>
+                    <li><strong><a href="melon_chart.html" target="" class="menu__title">멜론차트</a></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">최신음악</a></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">장르음악</a></strong></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">멜론DJ</a></strong></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">멜론TV</a></strong></li>
+                    <li><strong><a href="melon_magazine.html" target="" class="menu__title">매거진</a></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">뮤직어워드</a></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">어학</a></strong></li>
+                    <input id="check_btn" type="checkbox">
+                    <strong><label class="menu__title" for="check_btn">My홈</label></strong>
+                    <ul class="Myhome__list">
+                        <li>
+                            <div class="list__item">
+                                <a href="" target="" class="nav__link">좋아요</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <a href="" target="" class="nav__link">플레이리스트</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <a href="" target="" class="nav__link">최근들은</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <a href="" target="" class="nav__link">구매목록</a>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="melon_bar"></div>
+        <div class="header">
+            <div class="logo">
+                <a href="main.html">
+                    <img src="../../images/album_ticket/common/멜론 로고.png" alt="멜론 로고">
+                </a>
+            </div>
+            <div class="header_menu">
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <ul class="top_menu">
+                    <li class=""><a href="subscribe.html">이용권 구매</a></li>
+                    <li class=""><a href="login.html">로그인</a></li>
+                    <li class="">회원가입</li>
+                    <li class="">공지사항</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blank"></div>
+        <div id="album_container">
+            <div class="top_sale_Page">
+                <div class="singer">
+                    <p>New Jeans</p>
+                </div>
+                <div class="main_album_img">
+                    <img src="../../images/album_ticket/album/web/앨범커버사진.png" alt="뉴진스 앨범 사진">
+                </div>
+
+                <div class="boldLine">
+                    <img src="../../images/album_ticket/album/web/이미지 구분선.png" alt="굵은 구분선">
+                </div>
+                <div class="main_album_text">
+                    <p class="comment">트렌드의 정중앙에서, 혹은 트렌드와 무관하게 시대 불문 <br> 남녀노소 모두에게 사랑받아온 'Jean'처럼. <br> 이 시대의 새로운 아이콘으로, 매일 찾게 되는<br> 언제입어도 질리지 않는 'New Jeans'가 되길!</p>
+                    <p class="album_title">NewJeans 1st EP 'New Jeans'</p>
+                    <p class="price">₩13,200</p>
+                    <div class="countBtn">
+                        <button type="button" id="decrease" class="minusBtn">-</button>
+                        <div id="counter" class="count_num">1</div>
+                        <button type="button" id="increase" class="plusBtn">+</button>
+                    </div>
+                    <div class="buyBtn">
+                        <div class="add_to_cart_btn"> ADD TO CART</div>
+                        <div class="buy_now_btn">BUY NOW</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="report">
+
+
+
+            <div class="introduction_title">
+                <div class="album_spec csh98419">앨범사양</div>
+                <div class="artist_introduction ">아티스트 소개</div>
+                <div class="question ">Q&A</div>
+            </div>
+            
+            <div class="contents">
+                <ul class="type">
+                    <li>총 1종</li>
+                    <li>- 아웃박스 / 1종 W62 X H90 / T15</li>
+                    <li>- 리릭스 / 1종 / W55 X H85 / 28 Pages</li>
+                    <li>- 포토카드 / 3세트 중 1세트(10종) 랜덤 / W55 X H85</li>
+                    <li>- 큐알카드/3종 중 1종 랜덤 / W55 X H85</li>
+                </ul>
+            </div>
+            <div class="add">
+                <img src="../../images/album_ticket/album/web/배너.png" alt="멜론광고배너">
+            </div>
+            <div class="albumDetail">
+                <div class="albumDetailLeft">
+                    <img src="../../images/album_ticket/album/web/음원커버사진.png" alt="뉴진스 음원 커버사진">
+                </div>
+                <div class="albumDetailRight">
+                    <div class="subTitle">
+                        <div class="titleTxt">
+                            <h4>NewJeans 1st EP 'New Jeans'</h4>
+                        </div>
+                        <div class="albumArtist">
+                            <span>뉴진스</span>
+                            <span>기획사 : ADOR</span>
+                            <span>소속 : YG PLUS</span>
+                            <span>DANCE, R&B/SOUL</span>
+                            <span>2022/08/01</span>
+                        </div>
+                        <div class="txtBox">
+                            <p>
+                                <strong>트렌드의 정중앙에서, 혹은 트렌드와 무관하게 시대 불문 남녀노소 모두에게 사랑받아온 ‘Jean'처럼.<br>
+                                    이 시대의 새로운 아이콘으로, 매일 찾게 되는 언제입어도 질리지 않는 "New Jeans"가 되길!</strong>
+                            </p>
+                            <p>
+                                이것이 NewJeans가 지향하는 가치이자, New Genes - NewJeans의 시작이다.
+                            </p>
+                            <p>
+                                어디서든 편하게 들을 수 있는 세련된 이지리스닝 팝을 추구하는 동시에 과장 없는 자연스러운 사운드 엔지니어링으로
+                                NewJeans 멤버들 본연의 목소리를 살리는 프로듀싱을 진행했다. 앨범에 수록된 네 곡은 전원 10대로 구성된 
+                                NewJeans 멤버들의 순수하고 자연스러운 매력과 10대 고유의 에너지를 오롯이 담아내고 있다. 
+                            </p>
+                            <div class="viewMore">
+                                <details>
+                                    <summary>VIEW MORE</summary>
+                                    <p>얼핏 들으면 NewJeans 또래의 사랑을 이야기하는 것만 같지만, 각각의 수록곡은 다양한 음악적 시도를 바탕으로 각기 다른 서사를 담고 있고 이러한 서사가 모여 자연스럽게 10대의 라이프 스타일을 포괄한다. 또한 개인의 스토리 너머 ‘우리'라는 서사를 그린다. 파격적으로 세 곡의 타이틀곡을 내세운 건 NewJeans가 전하고 싶은 메시지를 온전히 전달하기 위한 포석이다.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="trackList">
+                <div class="trackListTitle">
+                    <h4>TRACKLIST</h4>
+                </div>
+                <div class="musicPlayBar">
+                    <div class="trackListLine"></div>
+                    <div class="checkBox">
+                        <input type="checkbox" id="cb">
+                        <label for="cb"></label>
+                        <div class="btn play"><i class="fa-sharp fa-solid fa-play"></i><span>듣기</span></div>
+                        <div class="btn put"><i class="fa-sharp fa-solid fa-plus"></i><span>담기</span></div>
+                        <div class="btn download"><i class="fa-solid fa-arrow-down"></i><span>다운</span></div>
+                        <div class="btn flac"><i class="fa-solid fa-arrow-down"></i><span>FLAC</span></div>
+                        <div class="btn gift"><i class="fa-solid fa-gift"></i><span>선물</span></div>
+                    </div>
+                    <div class="trackListLine1"></div>
+                    <div class="trackList1">
+                        <input type="checkbox" id="cb1">
+                        <label for="cb1"></label>
+                        <span class="trackListNum">1</span>
+                        <div class="trackListSongSinger">
+                            <p class="song">Attention</p>
+                            <p class="singer">NewJeans</p>
+                        </div>
+                        <span class="trackListAlbum">NewJeans 1st EP 'New Jeans'</span>
+                        <div class="trackListHeart"><i class="fa-regular fa-heart"></i>182,540</div>
+                        <div class="icon">
+                            <div class="play"><i class="fa-sharp fa-solid fa-play"></i></div>
+                            <div class="put"><i class="fa-sharp fa-solid fa-plus"></i></div>
+                            <div class="download"><i class="fa-solid fa-arrow-down"></i></div>
+                            <div class="video"><i class="fa-solid fa-video"></i></div>
+                        </div>
+                    </div>
+                    <div class="trackListLine1"></div>
+                    <div class="trackList1">
+                        <input type="checkbox" id="cb1">
+                        <label for="cb1"></label>
+                        <span class="trackListNum">2</span>
+                        <div class="trackListSongSinger">
+                            <p class="song">Hype boy</p>
+                            <p class="singer">NewJeans</p>
+                        </div>
+                        <span class="trackListAlbum">NewJeans 1st EP 'New Jeans'</span>
+                        <div class="trackListHeart"><i class="fa-regular fa-heart"></i>169,244</div>
+                        <div class="icon">
+                            <div class="play"><i class="fa-sharp fa-solid fa-play"></i></div>
+                            <div class="put"><i class="fa-sharp fa-solid fa-plus"></i></div>
+                            <div class="download"><i class="fa-solid fa-arrow-down"></i></div>
+                            <div class="video"><i class="fa-solid fa-video"></i></div>
+                        </div>
+                    </div>
+                    <div class="trackListLine1"></div>
+                    <div class="trackList1">
+                        <input type="checkbox" id="cb1">
+                        <label for="cb1"></label>
+                        <span class="trackListNum">3</span>
+                        <div class="trackListSongSinger">
+                            <p class="song">Cookie</p>
+                            <p class="singer">NewJeans</p>
+                        </div>
+                        <span class="trackListAlbum">NewJeans 1st EP 'New Jeans'</span>
+                        <div class="trackListHeart"><i class="fa-regular fa-heart"></i>100,149</div>
+                        <div class="icon">
+                            <div class="play"><i class="fa-sharp fa-solid fa-play"></i></div>
+                            <div class="put"><i class="fa-sharp fa-solid fa-plus"></i></div>
+                            <div class="download"><i class="fa-solid fa-arrow-down"></i></div>
+                            <div class="video"><i class="fa-solid fa-video"></i></div>
+                        </div>
+                    </div>
+                    <div class="trackListLine1"></div>
+                    <div class="trackList1">
+                        <input type="checkbox" id="cb1">
+                        <label for="cb1"></label>
+                        <span class="trackListNum">4</span>
+                        <div class="trackListSongSinger">
+                            <p class="song">Hurt</p>
+                            <p class="singer">NewJeans</p>
+                        </div>
+                        <span class="trackListAlbum">NewJeans 1st EP 'New Jeans'</span>
+                        <div class="trackListHeart"><i class="fa-regular fa-heart"></i>54,321</div>
+                        <div class="icon">
+                            <div class="play"><i class="fa-sharp fa-solid fa-play"></i></div>
+                            <div class="put"><i class="fa-sharp fa-solid fa-plus"></i></div>
+                            <div class="download"><i class="fa-solid fa-arrow-down"></i></div>
+                            <div class="video"><i class="fa-solid fa-video"></i></div>
+                        </div>
+                    </div>
+                    <div class="trackListLine1"></div>
+                </div>
+
+
+            </div>
+            <div class="detailPage">
+                <div class="newJeansPage">
+                    <img src="../../images/album_ticket/album/web/상세페이지(최최최최초최최종).png" alt="뉴진스 앨범 상세페이지">
+                </div>
+            </div>
+            <div class="aboutVideo">
+                <div class="videoTop">
+                    <div class="videoTopLeft">
+                        <span class="titleLine"><img src="../../images/album_ticket/album/web/-짝대기.png" alt=""></span>
+                        <span class="titleText">관련 비디오</span>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../../images/album_ticket/album/web/hype boy 2.png" alt="NewJeans-HypeBoy(퍼포먼스뮤비2)">
+                            <div class="videoName">Hype Boy(Performance Ver.2)</div>
+                            <div class="singerName">New Jeans</div>
+                            <div class="hits"><span>조회수</span><span class="hitsNum">56,090</span><span><i class="fa-regular fa-heart"></i></span><span class="heartNum">976</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/album_ticket/album/web/hype boy 1.png" alt="NewJeans-HypeBoy(퍼포먼스뮤비1)">
+                            <div class="videoName">Hype Boy(Performance Ver.1)</div>
+                            <div class="singerName">New Jeans</div>
+                            <div class="hits"><span>조회수</span><span class="hitsNum">44,947</span><span><i class="fa-regular fa-heart"></i></span><span class="heartNum">993</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/album_ticket/album/web/kookie.png" alt="NewJeans-Kookie 영상">
+                            <div class="videoName">kookie</div>
+                            <div class="singerName">New Jeans</div>
+                            <div class="hits"><span>조회수</span><span class="hitsNum">58,310</span><span><i class="fa-regular fa-heart"></i></span><span class="heartNum">1,757</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/album_ticket/album/web/hurt.png" alt="NewJeans-Hurt 영상">
+                            <div class="videoName">Hurt</div>
+                            <div class="singerName">New Jeans</div>
+                            <div class="hits"><span>조회수</span><span class="hitsNum">68,412</span><span><i class="fa-regular fa-heart"></i></span><span class="heartNum">1,751</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/album_ticket/album/web/하잎보이 민지버전.png" alt="NewJeans-HypeBoy(민지 버전)">
+                            <div class="videoName">Hype Boy(MINJI Ver.)</div>
+                            <div class="singerName">New Jeans</div>
+                            <div class="hits"><span>조회수</span><span class="hitsNum">41,645</span><span><i class="fa-regular fa-heart"></i></span><span class="heartNum">1,532</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/album_ticket/album/web/하잎보이 해린다니엘버전.png" alt="NewJeans-HypeBoy(해린,다니엘 버전)">
+                            <div class="videoName">Hype Boy(HAERIN,DANIELLE Ver.)</div>
+                            <div class="singerName">New Jeans</div>
+                            <div class="hits"><span>조회수</span><span class="hitsNum">132,456</span><span><i class="fa-regular fa-heart"></i></span><span class="heartNum">1,905</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/album_ticket/album/web/하잎보이 하니버전.png" alt="NewJeans-HypeBoy(하니 버전)">
+                            <div class="videoName">Hype Boy(HANNI Ver.)</div>
+                            <div class="singerName">New Jeans</div>
+                            <div class="hits"><span>조회수</span><span class="hitsNum">38,356</span><span><i class="fa-regular fa-heart"></i></span><span class="heartNum">1,457</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/album_ticket/album/web/어텐션.png" alt="NewJeans-attention 영상">
+                            <div class="videoName">Attention</div>
+                            <div class="singerName">New Jeans</div>
+                            <div class="hits"><span>조회수</span><span class="hitsNum">226,372</span><span><i class="fa-regular fa-heart"></i></span><span class="heartNum">2,718</span></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+            <div class="aboutReview">
+                <div class="reviewTop">
+                    <div class="reviewTopLeft">
+                        <span class="titleLine"><img src="../../images/album_ticket/album/web/-짝대기.png" alt=""></span>
+                        <span class="titleText">REVIEW</span>
+                    </div>
+                    <div class="commentSection">
+                        <div class="profile"><img src="../../images/album_ticket/album/web/기본 프로필.png" alt="내프로필사진"></div>
+                        <div class="writeComment"><textarea name="review" id="writeComment" cols="85" rows="3" placeholder="댓글을 남겨보세요." ></textarea></div>
+                        <div><input type="submit" id="submitBtn" value="등록"></div>
+                    </div>
+                </div>
+
+                <div class="wholeReview">
+                    <div class="totalReview"><span>총</span><span class="totalReviewNum">10,626</span><span>개</span></div>
+                    <div class="reviewOrder"><span>최신순</span><span>추천순</span><span>답글순</span></div>
+                </div>
+                <div class="reviewLine"></div>
+                <div class="otherReview">
+                    <div class="recentReview">
+                        <div class="profile"><img src="../../images/album_ticket/album/web/피카츄프로필.png" alt="기본프로필사진"></div>
+                        <div class="userId"><span>Ric</span><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="writeReview">
+                            <div class="reviewText">노래의 흐름이 자연스러워서 좋다. 다른 대다수 곡들은 뭔 두세개 노래를 이어만든 느낌에다 여러 작곡가들이 
+                                너무 머리를 굴린 티가 나서 듣기 피곤한데, 뉴진스 곡들은 그 반대라서 굿. 
+                                그리고...제작자 민희진의 음악취향이 너무 맘에 든다.</div>
+                            <div class="reviewDay">2022.11.21 22:22</div>
+                            <div class="reReview"><span>답글 0개</span><i class="fa-solid fa-caret-down"></i></div>
+                        </div>
+                        <div class="likeOrHate">
+                            <div class="like"><i class="fa-regular fa-thumbs-up"><span>0</span></i></div>
+                            <div class="hate"><i class="fa-regular fa-thumbs-down"><span>0</span></i></div>
+                        </div>
+                    </div>
+
+                    <div class="recentReview">
+                        <div class="profile"><img src="../../images/album_ticket/album/web/프로필사진.png" alt="쥬쥬8 프로필 사진"></div>
+                        <div class="userId"><span>쥬쥬8</span><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="writeReview">
+                            <div class="reviewText">뉴진스의 앞으로의 과제는 첫 앨범인 이 앨범 수록곡 퀄리티를 뛰어넘는 음악이 나오는것..</div>
+                            <div class="reviewDay">2022.11.21 11:27</div>
+                            <div class="reReview2"><span>답글 0개</span><i class="fa-solid fa-caret-down"></i></div>
+                        </div>
+                        <div class="likeOrHate">
+                            <div class="like"><i class="fa-regular fa-thumbs-up"><span>0</span></i></div>
+                            <div class="hate"><i class="fa-regular fa-thumbs-down"><span>0</span></i></div>
+                        </div>
+                    </div>
+
+                    <div class="recentReview">
+                        <div class="profile"><img src="../../images/album_ticket/album/web/폴냄폴 프로필.png" alt="폴냄폴 프로필 사진"></div>
+                        <div class="userId"><span>폴냄폴</span><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="writeReview">
+                            <div class="reviewText">안질려 앨범나오고 하루에 두세번씩은 듣고있는데도 전곡이 안질림 순위가 증명해주쟈냐~~</div>
+                            <div class="reviewDay">2022.11.21 10:09</div>
+                            <div class="reReview2"><span>답글 0개</span><i class="fa-solid fa-caret-down"></i></div>
+                        </div>
+                        <div class="likeOrHate">
+                            <div class="like"><i class="fa-regular fa-thumbs-up"><span>0</span></i></div>
+                            <div class="hate"><i class="fa-regular fa-thumbs-down"><span>0</span></i></div>
+                        </div>
+                    </div>
+
+                    <div class="recentReview">
+                        <div class="profile"><img src="../../images/album_ticket/album/web/lowel._. 프로필.png" alt="lowel._. 프로필 사진"></div>
+                        <div class="userId"><span>lowel._.</span><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="writeReview">
+                            <div class="reviewText">뉴진스 겨울컴백 너무너무 기대됨♡♡</div>
+                            <div class="reviewDay">2022.11.20 16:31</div>
+                            <div class="reReview2"><span>답글 0개</span><i class="fa-solid fa-caret-down"></i></div>
+                        </div>
+                        <div class="likeOrHate">
+                            <div class="like"><i class="fa-regular fa-thumbs-up"><span>0</span></i></div>
+                            <div class="hate"><i class="fa-regular fa-thumbs-down"><span>0</span></i></div>
+                        </div>
+                    </div>
+                    <div class="reviewPage">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        
+        <div class="footer">
+            <div class="footerMenu">
+                <span>멜론6.0 둘러보기</span>
+                <span>멜론스튜디오</span>
+                <span>Windows 플레이어</span>
+                <span>Mac 플레이어</span>
+                <span>iPad</span>
+                <span>고객센터</span>
+            </div>
+
+            <div class="footerCont">
+                
+
+                <div class="footerCenter">
+                    <div class="footerTermsOfUse">
+                        <span>이용약관</span>
+                        <span class="important">위치기반서비스 이용약관</span>
+                        <span class="important">개인정보처리방침</span>
+                        <span>청소년보호정책</span>
+                        <span>제휴/프로모션문의</span>
+                        <span>이메일주소무단수집거부</span>
+                        <span>파트너센터</span>
+                    </div>
+        
+                    <div class="footerBusinessInfo">
+                        <div class="businessInfo1">
+                            <span class="emphasis">(주)카카오엔터테인먼트</span>
+                            <span>경기도 성남시 분당구 판교역로 221</span>
+                            <span>대표이사 이진수, 김성수</span>
+                            <span>사업자 등록번호 : 220-88-02594</span>
+                            <span>통신판매업신고번호 : 2018-성남분당B-0004</span>
+                            <span>사업정보확인></span>
+                        </div>
+                        <div class="businessInfo2">
+                            <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+                            <span>이메일 : melon_info@kakaoent.com</span>
+                            <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                            <span>© Kakao Entertainment Corp.</span>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="footerSns">
+                    <div class="twitterIcon"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="instagramIcon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="youtubeIcon"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="facebookIcon"><i class="fa-brands fa-facebook-f"></i></div>
+                </div>
+                
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper', {
+        slidesPerView: 4,
+        direction: getDirection(),
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            resize: function () {
+            swiper.changeDirection(getDirection());
+            },
+        },
+        });
+
+        function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+        return direction;
+        }
+    </script>
+    <script src="../js/album.js"></script>
+    <script src="../js/sidemenu.js"></script>
+</body>
+</html>

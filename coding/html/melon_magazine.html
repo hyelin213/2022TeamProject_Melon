@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/melon_magazine.css">
+    <link rel="stylesheet" href="../css/melon_magazine_1024.css">
+    <link rel="stylesheet" href="../css/melon_magazine_768.css">
+    <title>멜론 매거진</title>
+</head>
+<body>
+    <!-- 소연 사이드메뉴 -->
+    <div id="drawer_menu">
+        <div class="side_menu">
+            <div class="menu_opner">
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <i class="fa-solid fa-xmark menu_opner"></i>
+            <img src="../../images/melon_logo_menu.png" alt="멜론 로고">
+            <ul>
+                <li><strong><a href="melon_chart.html" target="" class="menu__title">멜론차트</a></strong></li>
+                <li><strong><a href="" target="" class="menu__title">최신음악</a></strong></li>
+                <li><strong><a href="" target="" class="menu__title">장르음악</a></strong></strong></li>
+                <li><strong><a href="" target="" class="menu__title">멜론DJ</a></strong></strong></li>
+                <li><strong><a href="" target="" class="menu__title">멜론TV</a></strong></li>
+                <li><strong><a href="melon_magazine.html" target="" class="menu__title">매거진</a></strong></li>
+                <li><strong><a href="" target="" class="menu__title">뮤직어워드</a></strong></li>
+                <li><strong><a href="" target="" class="menu__title">어학</a></strong></li>
+                <input id="check_btn" type="checkbox">
+                <strong><label class="menu__title" for="check_btn">My홈</label></strong>
+                <ul class="Myhome__list">
+                    <li>
+                        <div class="list__item">
+                            <a href="" target="" class="nav__link">좋아요</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list__item">
+                            <a href="" target="" class="nav__link">플레이리스트</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list__item">
+                            <a href="" target="" class="nav__link">최근들은</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list__item">
+                            <a href="" target="" class="nav__link">구매목록</a>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="container">
+
+        <!-- header 공동 소스 -->
+        <div class="header_fixed">
+            <div class="melon_bar"></div>
+            <div class="header">
+                <div class="logo">
+                    <a href="main.html">
+                        <img src="../../images/melon_logo.png" alt="멜론 로고">
+                    </a>
+                </div>
+                <div class="header_menu">
+                    <div class="header_menu_1920">
+                        <div class="search">
+                            <form action="">
+                                <input type="text" placeholder="검색어를 입력하세요.">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </form>
+                        </div>
+                        <ul class="top_menu top_menu_text">
+                            <li class="top_menu_text1">
+                                <a href="subscribe.html">
+                                    이용권 구매
+                                </a>
+                            </li>
+                            <li class="top_menu_text2">
+                                <a href="login.html">
+                                    로그인
+                                </a>
+                            </li>
+                            <li class="top_menu_text3">회원가입</li>
+                            <li class="top_menu_text4">공지사항</li>
+                        </ul>
+                    </div>
+                    <div class="header_menu_1024">
+                        <div class="header_menu_button menu_opner">
+                            <span class="menu_button menu_button1"></span>
+                            <span class="menu_button menu_button2"></span>
+                            <span class="menu_button menu_button3"></span>
+                        </div>
+                        <ul class="top_menu top_menu_icon">
+                            <li class="top_menu_icon1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </li>
+                            <li class="top_menu_icon2">
+                                <a href="subscribe.html">
+                                    <img src="../../images/icon/ticket4.png" class="top_icon_img2" alt="멜론이용권">
+                                </a>
+                                <a href="subscribe.html">
+                                    <img src="../../images/icon/ticket5.png" class="top_icon_img3" alt="멜론이용권">
+                                </a>
+                            </li>
+                            <li class="top_menu_icon3">
+                                <a href="login.html">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
+                            </li>
+                            <li class="top_menu_icon4">
+                                <i class="fa-regular fa-bell"></i>
+                            </li>
+                        </ul>              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="top_contents">
+            <div id="main_magazine">
+                <nav class="main_magazine_menu">
+                    <ul>
+                        <li class="main_select_menu">연재중 매거진</li>
+                        <li class="dividing_line"></li>
+                        <li class="">완결된 매거진</li>
+                    </ul>
+                </nav>
+                <div class="main_magazine_contents">
+                    <div class="magazine_coverimg swiper mySwiper first" data-aos="fade-up" data-aos-offset="700" >
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="hover_content">
+                                    <div class="category">
+                                        <div class="category_cover"></div>
+                                        <div class="category_title">스포트라이트</div>
+                                    </div>
+                                    <div class="detail_content">
+                                        <h4 class="dot_five_animation">비비 (BIBI)가 스스로 건설한 신세계,<br>[Lowlife Princess: Noir]</h4>
+                                        <p class="dot_six_animation">안녕하세요 멜론 가족 여러분! 비비 (BIBI)가 생애 첫 정규앨범을<br>
+                                            발표하였습니다. 12개의 트랙 중 타이틀곡 '나쁜X'의 뮤직비디오<br>현장으로 같이 가보실까요?</p>
+                                    </div>
+                                </div>
+                                <img src="../../images/melon_magazine/main_magazine1.jpg" alt="메인 매거진" class="coverimg_1">
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="hover_content">
+                                    <div class="category">
+                                        <div class="category_cover"></div>
+                                        <div class="category_title">TMI 대전</div>
+                                    </div>
+                                    <div class="detail_content">
+                                        <h4>흑백의 캔버스에 칠해진 일곱 가지 색깔들,<br>ATBO [The Beginning : 開花]</h4>
+                                        <p>지난 7월 27일, 데뷔 앨범 [The Beginning : 開花]로 첫발을 내디딘<br>
+                                            ATBO의 데뷔 쇼케이스가 열렸습니다. 신인다운 풋풋함 가득한<br>
+                                            ATBO가 TMI대전에도 찾아왔는데요!
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="../../images/melon_magazine/main_magazine2.jpg" alt="메인 매거진" class="coverimg_2">
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="hover_content">
+                                    <div class="category">
+                                        <div class="category_cover"></div>
+                                        <div class="category_title">TMI 대전</div>
+                                    </div>
+                                    <div class="detail_content">
+                                        <h4>본격적인 솔로 활동 시작!<br>다채로운 매력의 소유자, 조유리 [GLASSY]</h4>
+                                        <p>어디서든 투명하게 빛을 내는 "유리스러운" 매력이 담뿍 담긴 조유리의<br>
+                                            첫 번째 싱글 [GLASSY]의 타이틀곡 'GLASSY' MV 촬영 현장으로<br>
+                                            멜론 가족 여러분을 초대합니다~!
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="../../images/melon_magazine/main_magazine3.jpg" alt="메인 매거진" class="coverimg_3">
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="hover_content">
+                                    <div class="category">
+                                        <div class="category_cover"></div>
+                                        <div class="category_title white">매거진 이벤트</div>
+                                    </div>
+                                    <div class="detail_content">
+                                        <h4>개성 넘치는 힙한 감성,<br>SECRET NUMBER (시크릿넘버) [TAP]</h4>
+                                        <p>글로벌 콘셉트돌 SECRET NUMBER (시크릿넘버)가 싱글 5집 [TAP]<br>
+                                            으로 돌아왔습니다! 멜론 가족 여러분들의 마음을 과감하게 TAP하는<br>
+                                            'TAP' 뮤직비디오 촬영 현장으로 여러분을 초대합니다!
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="../../images/melon_magazine/main_magazine4.jpg" alt="메인 매거진" class="coverimg_4">
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="back_text" data-aos="fade-down">
+                            <img src="../../images/melon_magazine/backtext.png" alt="MAGAZINE.">
+                        </div>
+                    </div>
+                    <div class="magazine_coverimg carousel" data-aos="fade-up">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="hover_content">
+                                    <div class="category">
+                                        <div class="category_cover"></div>
+                                        <div class="category_title">스포트라이트</div>
+                                    </div>
+                                    <div class="detail_content">
+                                        <h4 class="dot_five_animation">비비 (BIBI)가 스스로 건설한 신세계,<br>[Lowlife Princess: Noir]</h4>
+                                        <p class="dot_six_animation">안녕하세요 멜론 가족 여러분! 비비 (BIBI)가 생애 첫 정규앨범을
+                                            발표하였습니다. 12개의 트랙 중 타이틀곡 '나쁜X'의 뮤직비디오 현장으로 같이 가보실까요?</p>
+                                    </div>
+                                </div>
+                                <img src="../../images/melon_magazine/main_magazine1.jpg" alt="메인 매거진" class="coverimg_1">
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="hover_content">
+                                    <div class="category">
+                                        <div class="category_cover"></div>
+                                        <div class="category_title">TMI 대전</div>
+                                    </div>
+                                    <div class="detail_content">
+                                        <h4>흑백의 캔버스에 칠해진<br>일곱 가지 색깔들,ATBO [The Beginning : 開花]</h4>
+                                        <p>지난 7월 27일, 데뷔 앨범 [The Beginning : 開花]로 첫발을 내디딘
+                                            ATBO의 데뷔 쇼케이스가 열렸습니다. 신인다운 풋풋함 가득한
+                                            ATBO가 TMI대전에도 찾아왔는데요!
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="../../images/melon_magazine/main_magazine2.jpg" alt="메인 매거진" class="coverimg_2">
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="hover_content">
+                                    <div class="category">
+                                        <div class="category_cover"></div>
+                                        <div class="category_title">TMI 대전</div>
+                                    </div>
+                                    <div class="detail_content">
+                                        <h4>본격적인 솔로 활동 시작!<br>다채로운 매력의 소유자, 조유리 [GLASSY]</h4>
+                                        <p>어디서든 투명하게 빛을 내는 "유리스러운" 매력이 담뿍 담긴 조유리의
+                                            첫 번째 싱글 [GLASSY]의 타이틀곡 'GLASSY' MV 촬영 현장으로
+                                            멜론 가족 여러분을 초대합니다~!
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="../../images/melon_magazine/main_magazine3.jpg" alt="메인 매거진" class="coverimg_3">
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="hover_content">
+                                    <div class="category">
+                                        <div class="category_cover"></div>
+                                        <div class="category_title white">매거진 이벤트</div>
+                                    </div>
+                                    <div class="detail_content">
+                                        <h4>개성 넘치는 힙한 감성,<br>SECRET NUMBER (시크릿넘버) [TAP]</h4>
+                                        <p>글로벌 콘셉트돌 SECRET NUMBER (시크릿넘버)가 싱글 5집 [TAP]
+                                            으로 돌아왔습니다! 멜론 가족 여러분들의 마음을 과감하게 TAP하는
+                                            'TAP' 뮤직비디오 촬영 현장으로 여러분을 초대합니다!
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="../../images/melon_magazine/main_magazine4.jpg" alt="메인 매거진" class="coverimg_4">
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="back_text" data-aos="fade-down">
+                            <img src="../../images/melon_magazine/backtext.png" alt="MAGAZINE.">
+                        </div>
+                    </div>
+                    <div class="magazine_title">
+                        <img src="../../images/melon_magazine/maintitle.png" alt="매거진 타이틀" class="title1920">
+                        <img src="../../images/melon_magazine/maintitle1024.png" alt="매거진 타이틀" class="title1024">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="middle_contents" data-aos="fade-up">
+            <div class="today_magazine">
+                <div class="left_contents">
+                    <div class="today">
+                        <h4>TODAY</h4>
+                    </div>
+                    <div class="today1024">
+                        <img src="../../images/melon_magazine/today1024.png" alt="오늘 게시글 타이틀">
+                    </div>
+                    <div class="today_contents">
+                        <h2></h2>
+                        <h3>오늘의 매거진</h3>
+                        <p>매일 업데이트되는<br>기사와 칼럼을 한눈에 모아보세요.</p>
+                    </div>
+                </div>
+                <div class="right_contents swiper mySwiper second second1024">
+                    <ul class="swiper-wrapper">
+                        <div class="today_new">
+                            <span>NEW</span>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="other_contents">
+            <div class="category_select">
+                <h3>연재중 매거진</h3>
+                <div class="select_category768">
+                    <p>전체</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="category_select_contents">
+                    <ul class="more_category more_before_height category1024">
+                        <li class="this_select">전체</li>
+                        <li>매거진 이벤트</li>
+                        <li>스포트라이트</li>
+                        <li>업데이트 소식</li>
+                        <li>Melon Data Lab</li>
+                        <li>비하인드 컷</li>
+                        <li>TMI 대전</li>
+                        <li>아티스트는 뭘 듣니</li>
+                        <li>트랙제로</li>
+                        <li>멜론 서포터즈</li>
+                        <li>하이라이트 공연</li>
+                        <li>장르 인사이드</li>
+                        <li>트렌드 클리핑</li>
+                        <li>위클리 뮤직 뉴스</li>
+                        <li>컬쳐&스테이지</li>
+                        <li>테마&픽</li>
+                        <li>멜론 핫플리</li>
+                        <button class="more d-none">더보기</button>
+                        <i class="fa-solid fa-arrow-up more_before d-none"></i>
+                    </ul>
+                    <ul class="more_category more_before_height category768 d-none">
+                        <li class="this_select">전체</li>
+                        <li>매거진 이벤트</li>
+                        <li>스포트라이트</li>
+                        <li>업데이트 소식</li>
+                        <li>Melon Data Lab</li>
+                        <li>비하인드 컷</li>
+                        <li>TMI 대전</li>
+                        <li>아티스트는 뭘 듣니</li>
+                        <li>트랙제로</li>
+                        <li>멜론 서포터즈</li>
+                        <li>하이라이트 공연</li>
+                        <li>장르 인사이드</li>
+                        <li>트렌드 클리핑</li>
+                        <li>위클리 뮤직 뉴스</li>
+                        <li>컬쳐&스테이지</li>
+                        <li>테마&픽</li>
+                        <li>멜론 핫플리</li>
+                        <button class="more d-none">더보기</button>
+                        <i class="fa-solid fa-arrow-up more_before d-none"></i>
+                    </ul>
+                </div>
+            </div>
+            <div class="other_magazine width1350 width100">
+                <p>전체</p>
+                <div class="other_contents">
+                    <ul></ul>
+                </div>
+                <div class="other_page_number">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="magazine_email">
+            <div class="magazine_email_contents">
+                <div class="email_contents_left">
+                    <h3>매일 새로운<br class="enter1"> 멜론 매거진을<br>이메일로 받아보세요.</h3>
+                    <p>멜론 매거진만이 선보이는<br>다양한 소식을 접할 수 있습니다.</p>
+                </div>
+                <div class="email_contents_right">
+                    <h3>MELON MAGAZINE</h3>
+                    <form action="address_url" id="emailForm">
+                        <input type="text" name="mName" class="personal_data personal_data1" placeholder="NAME" maxlength="25">
+                        <input type="text" name="mEmail" class="personal_data personal_data2" placeholder="EMAIL ADDRESS">
+                    </form>
+                    <div class="checklist">
+                        <div class="checklist1">
+                            <input type="checkbox" id="check_fourteen" class="check_consent">
+                            <label for="check_fourteen"></label>
+                            <p>만 14세 이상임을 확인하고 동의합니다.</p>
+                        </div>
+
+                        <div class="checklist2">
+                            <input type="checkbox" id="check_consent" class="check_consent">
+                            <label for="check_consent"></label>
+                            <p>개인정보 수집 및 이용에 동의합니다.</p>
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" value="구독하기" class="subscribe">
+                </div>
+            </div>
+        </div>
+        <span class="top"><i class="fa-solid fa-arrow-up"></i></span>
+
+        <!-- 현주 footer -->
+        <div class="footer">
+            <div class="footerMenu">
+                <span>멜론6.0 둘러보기</span>
+                <span>멜론스튜디오</span>
+                <span>Windows 플레이어</span>
+                <span>Mac 플레이어</span>
+                <span>iPad</span>
+                <span>고객센터</span>
+            </div>
+            <div class="footerCont">
+                <div class="footerCenter">
+                    <div class="footerTermsOfUse">
+                        <span>이용약관</span>
+                        <span class="important">위치기반서비스 이용약관</span>
+                        <span class="important">개인정보처리방침</span>
+                        <span>청소년보호정책</span>
+                        <span>제휴/프로모션문의</span>
+                        <span>이메일주소무단수집거부</span>
+                        <span>파트너센터</span>
+                    </div>
+                    <div class="footerTermsOfUseTablet">
+                        <div>
+                            <span>이용약관</span>
+                            <span class="important">위치기반서비스 이용약관</span>
+                            <span class="important">개인정보처리방침</span>
+                        </div>
+                        <div>
+                            <span>청소년보호정책</span>
+                            <span>제휴/프로모션문의</span>
+                        </div>
+                        <div>
+                            <span>이메일주소무단수집거부</span>
+                            <span>파트너센터</span>
+                        </div>
+                    </div>
+                    <div class="footerTermsOfUseApp">
+                        <div>
+                            <span>이용약관</span>
+                        </div>
+                        <div>
+                            <span class="important">위치기반서비스 이용약관</span>
+                            <span class="important">개인정보처리방침</span>
+                        </div>
+                        <div>
+                            <span>청소년보호정책</span>
+                            <span>제휴/프로모션문의</span>
+                        </div>
+                        <div>
+                            <span>이메일주소무단수집거부</span>
+                            <span>파트너센터</span>
+                        </div>
+                    </div>
+                    <div class="footerBusinessInfo">
+                        <div class="businessInfo1">
+                            <span class="emphasis">(주)카카오엔터테인먼트</span>
+                            <span>경기도 성남시 분당구 판교역로 221</span>
+                            <span>대표이사 이진수, 김성수</span>
+                            <span>사업자 등록번호 : 220-88-02594</span>
+                            <span>통신판매업신고번호 : 2018-성남분당B-0004</span>
+                            <span>사업정보확인></span>
+                        </div>
+                        <div class="businessInfo2">
+                            <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+                            <span>이메일 : melon_info@kakaoent.com</span>
+                            <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                            <span>© Kakao Entertainment Corp.</span>
+                        </div>
+                    </div>
+                    <div class="footerBusinessInfoTablet">
+                        <div class="businessInfo1">
+                            <div>
+                                <span class="emphasis">(주)카카오엔터테인먼트</span>
+                                <span>경기도 성남시 분당구 판교역로 221</span>
+                                <span>대표이사 이진수, 김성수</span>
+                            </div>
+                            <div>
+                                <span>사업자 등록번호 : 220-88-02594</span>
+                                <span>통신판매업신고번호 : 2018-성남분당B-0004</span>
+                                <span>사업정보확인></span>
+                            </div>
+                            <div>
+                                <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+                                <span>이메일 : melon_info@kakaoent.com</span>
+                            </div>
+                            <div>
+                                <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                                <span>© Kakao Entertainment Corp.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerSns">
+                    <div class="twitterIcon"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="instagramIcon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="youtubeIcon"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="facebookIcon"><i class="fa-brands fa-facebook-f"></i></div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="../js/melon_magazine.js"></script>
+</body>
+</html>

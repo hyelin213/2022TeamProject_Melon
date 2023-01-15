@@ -1,0 +1,95 @@
+@media (min-width:320px) and (max-width:768px){
+.footer { 
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer > .footerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer > .footerMenu > span {
+    font-size: 2.8646vw;
+    color: #333333;
+    font-weight: 800;
+    padding-bottom: 6.5104vw;
+    width: 22.1354vw;
+    position: relative;
+    top: 7.0677vw;
+    margin-left: 50px;
+}
+.footer > .footerMenu > span:not(:last-child) {
+    margin-right: 35px;
+}
+.footer > .footerCont { 
+    position: relative; 
+    right: 45px; 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUseApp { 
+    margin: 0;
+    line-height: 5.2083vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 25.4167vw;
+    margin-bottom: 5.2083vw;
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUseApp > div { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; }
+.footer > .footerCont > .footerCenter > .footerTermsOfUseApp > div > span{
+    color: #939393;
+    font-size: 2.2135vw;
+    font-weight: 600;
+    margin-top: 0;
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUseApp > div > span:not(:last-child){
+    margin-right: 1.4323vw;
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUseApp > div > span:not(:last-child)::after{
+    margin-left: 1.8229vw;
+    content: "|";
+    color: #bfbfbf;
+    font-weight: 500;
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUseApp > div > .important {
+    font-weight: bolder;
+    color: #6b6b6b;
+}
+.footer > .footerCont > .footerSns{
+    position: relative;
+    top: 6.5104vw;
+    display: flex;
+    justify-content: end;
+}
+.footer > .footerCont > .footerSns > div {
+    display: inline-block;
+}
+.footer > .footerCont > .footerSns > div > i {
+    font-size: 5.2083vw;
+    color: #c1c1c1;
+    padding-left: 3.9063vw;
+    transition: 0.3s;
+}
+.footer > .footerCont > .footerSns > div :hover {
+    color: #686868;
+}
+.footer > .footerMenu > span:nth-child(n+3):nth-child(-n+5){
+    display: none;
+}
+.footer > .footerCont { 
+    display: flex;
+    flex-direction: column-reverse;
+}
+.footerTermsOfUse { display: none; }
+.footerTermsOfUseTablet { display: none; }
+.footerBusinessInfo { display: none; }
+.footerBusinessInfoTablet { display: none; }
+.footerTermsOfUseApp { display: inline-block; }
+}

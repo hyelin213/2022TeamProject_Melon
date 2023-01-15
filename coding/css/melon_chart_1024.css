@@ -1,0 +1,390 @@
+@media screen and (max-width: 1024px){
+
+    /* 769~1024px 이하 */
+
+    /* 소연 사이드 메뉴 => 고정화 */
+
+    #drawer_menu .header_fixed {
+        position: fixed;
+        z-index: 9;
+        width: 100%;
+    }
+
+    #drawer_menu div.menu_opner {
+        display: none;
+    }
+    #drawer_menu i.menu_opner {
+        display: block;
+        opacity: 0;
+        font-size: 2.5rem;
+        margin-top: .5rem;
+        padding-left: 1rem;
+        color: #333;
+    }
+
+    /* --------------------------------------- */
+
+    .contents_width{ width: 100%; margin: 0 auto; }
+    .inner_size2 { width: 85.45%; margin: 0 7.275%; }
+
+    .carousel { display: none; }
+
+    #main { margin-top: 12vw;}
+
+    #main #main_title {
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* #main_title */
+
+    #main_title .main_date_time {
+        display: flex;
+        margin-top: 1.5vw;
+    }
+
+    #main #main_title .main_title_text {
+        display: flex;
+        align-items: center;
+    }
+
+    #main #main_title h1 {
+        font-size: 4vw;
+        display: inline-block;
+    }
+
+    #main #main_title span {
+        position: static;
+        display: inline-block;
+        font-size: 1.1vw; line-height: 2.1vw;
+        border-radius: 2.2vw;
+        width: 2.2vw !important; height: 2.2vw;
+        margin-left: 1.8vw;
+    }
+
+    #main_title .main_today {
+        margin-left: 0;
+        font-size: 4vw;
+    }
+
+    #main_title .main_Time {
+        font-size: 4vw;
+        margin-left: 2vw;
+    }
+
+    #main_title .fa-chevron-down {
+        font-size: 2.2vw;
+        margin: 1.2vw 0 0 1vw;
+        color: #ececec;
+        cursor: pointer;
+    }
+
+    #main_title ul {
+        margin-top: 3vw; padding: 1vw 0;
+        width: 11vw; height: 19vw;
+        top: 1.7vw; right: 0;
+        
+        font-size: 1.9vw;
+        border-radius: .5vw;
+        box-shadow: 0 0 .5vw rgba(0, 0, 0, 0.4);
+    }
+
+    #main_title ul .select_timeObtion {
+        padding: .65vw 0;
+    }
+
+    /* #main > #main_menu 메인메뉴*/
+
+    #main #main_menu li{
+        font-size: 2vw;
+    }
+
+    #main #main_menu li:not(:first-child) { margin-left: 2vw; }
+
+    /* chart_contents */
+
+    #chart_contents {
+        margin-top: 10vw;
+    }
+
+    #chart_contents .rank_list .first_rank .rank_mark img { width: 7.3vw; }
+    #chart_contents .rank_list .second_third_rank .rank_mark img { width: 6.6vw; }
+
+    #chart_contents .rank_list .rank_mark .rank_mark_first {
+        font-size: 2.7vw;
+    }
+    #chart_contents .rank_list .second_third_rank .rank_mark span { font-size: 2.2vw; }
+
+    #chart_contents .rank_list .rank_text .chart_title {
+        font-size: 1.5vw; 
+    }
+
+    #chart_contents .rank_list .rank_text .chart_artist {
+        font-size: 1.2vw;
+    }
+
+    #chart_contents .rank_list .rank_text .rank_right_text {
+        grid-template-rows: 2fr 1fr;
+        font-size: 1.2vw;
+    }
+
+    /* .rank_icon 상세 조절 */
+
+    #chart_contents .rank_list #rank_icon {
+        height: 3vw;
+        font-size: 1.4vw;
+    }
+
+    #chart_contents .rank_list #rank_icon .like_button .heart_number {
+        font-size: .4vw;
+        line-height: 1.4vw;
+    }
+
+    /* #chart_contents .other_list */
+
+    #chart_contents .other_list {
+        backdrop-filter: blur(20px);
+        border-radius: 6vw;
+        padding-bottom: 2.7vw;
+    }
+
+    /* .other_list_select_option */
+
+    #chart_contents .other_list .other_list_select_option {
+        padding-top: 5vw;
+    }
+
+    #chart_contents .other_list .other_list_select_option li {
+        padding: .7vw 1.2vw;
+        border-radius: 1.2vw;
+        font-size: .9vw;
+        line-height: 1.3vw;
+    }
+
+    #chart_contents .other_list .other_list_select_option li:not(:first-child) {
+        margin-left: .9vw;
+    }
+    #chart_contents .other_list .other_list_select_option .select_option_refresh { display: none; }
+    #chart_contents .other_list .other_list_select_option .other_list_more {
+        display: block;
+    }
+
+    .other_list .other_list_select_option .other_list_more p {
+        padding: .7vw 2.2vw;
+        border-radius: 1.2vw;
+        font-size: 0.9vw;
+        border: 1px solid #606060;
+        cursor: pointer;
+        transition: .1s;
+    }
+    .other_list .other_list_select_option .other_list_more p:active {
+        background-color: #02cd39;
+        border-color: #02cd39; color: #fff;
+    }
+
+    #chart_contents .other_list .other_list_chart_option {
+        padding-bottom: 1.6vw;
+    }
+
+    #chart_contents .other_list .other_list_chart_option ul {
+        grid-template-columns: 
+            5vw 17.3vw 19.5vw 14.7vw repeat(4, 4.91vw) 1fr;
+        font-size: 1.09vw;
+        margin: 2.4vw 2.9vw 0;
+    }
+
+    .other_list .other_list_chart_option .chart_option_1 input[id="chartOption1"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail1"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail2"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail3"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail4"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail5"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail6"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail7"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail8"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail9"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail10"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail11"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail12"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail13"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail14"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail15"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail16"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail17"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail18"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail19"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail20"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail21"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail22"] + label,
+    .other_list .other_list_chart .chart_details input[id="chartDetail23"] + label
+    {
+        width: 1.2vw; height: 1.2vw;
+        border-radius: .15vw;
+    }
+
+    .other_list .other_list_chart ul .chart_details {
+        margin: .7vw 0;
+        height: 7.1vw;
+        border-top-left-radius: 4vw;
+        border-bottom-left-radius: 4vw;
+    }
+
+    .other_list_chart ul .chart_details ul {
+        grid-template-columns: 
+            5.5vw 6.4vw 10.5vw 19.5vw 15.2vw repeat(4, 4.84vw) 1fr;
+        margin: 0 2.9vw; padding-top: .55vw;
+    }
+
+    .other_list .other_list_chart ul li i {
+        font-size: 1.6vw;
+    }
+
+    .other_list_chart ul .chart_details ul .chart_detail_list2 {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.7vw;
+    }
+
+    .other_list_chart ul .chart_details ul .chart_detail_list3 img {
+        width: 6vw;    
+    }
+
+    .other_list_chart ul .chart_details ul .chart_detail_list4 p {
+        font-size: 1.2vw;
+        width: 10.5vw;
+    }
+
+    .other_list_chart ul .chart_details ul .chart_detail_list4 span {
+        font-size: 1vw;
+    }
+
+    .other_list_chart ul .chart_details ul .chart_detail_list5 {
+        font-size: 1.2vw;
+        width: 10.5vw;
+    }
+
+    .other_list_chart ul .chart_details ul .chart_detail_list6 .chart_detail_list6_text {
+        display: none;
+    }
+
+    /* 현주 footer */
+
+    .footer { 
+        background-color: #fafafa;
+        width: 100%;
+        height: 395px;
+    
+    }
+    .footer > .footerMenu {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #c1c1c1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer > .footerMenu > span {
+        display: inline-block;
+        font-size: 13px;
+        color: #333333;
+        font-weight: 800;
+    }
+    .footer > .footerMenu > span:not(:last-child) {
+        margin-right: 35px;
+    }
+    
+    .footer > .footerCont > .footerCenter { margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet { 
+        width: 500px;
+        margin: 0 auto; 
+        text-align: center;
+        line-height: 22px;
+    }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div { display: flex; justify-content: center; align-items: center; }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div > span{
+        color: #939393;
+        font-size: 11px;
+        font-weight: 600;
+        margin-top: 0;
+    }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div > span:not(:last-child){
+        margin-right: 11px;
+    }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div > span:not(:last-child)::after{
+        margin-left: 15px;
+        content: "|";
+        color: #bfbfbf;
+        font-weight: 500;
+    }
+    
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div > .important {
+        font-weight: bolder;
+        color: #6b6b6b;
+    
+    }
+    
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet { 
+    
+        margin: 2.60vw 0; 
+    }
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 { 
+        margin-bottom: 3px; 
+        text-align: center; 
+        line-height: 18px;
+    }
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 > div > span {
+        color: #939393;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 > div > span:not(:last-child){
+        margin-right: 5px;
+    }
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 > div > span:not(:last-child)::after{
+        margin-left: 8px;
+        content: "|";
+        color: #bfbfbf;
+        font-weight: 500;
+    }
+    
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 > div > .emphasis {
+        font-weight: bold;
+        color: #939393;
+    }
+    
+    .footer > .footerCont > .footerSns{
+        margin: 40px 0;
+    }
+    
+    .footer > .footerCont > .footerSns > div {
+        display: inline-block;
+    }
+    .footer > .footerCont > .footerSns > div > i {
+        font-size: 22px;
+        color: #c1c1c1;
+        margin-right: 18px;
+        transition: 0.3s;
+    }
+    .footer > .footerCont > .footerSns > div :hover {
+        color: #686868;
+    }
+    
+    .footer > .footerMenu > span:nth-child(n+3):nth-child(-n+4){
+        display: none;
+    }
+    .footer > .footerCont { 
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footerTermsOfUse { display: none; }
+    .footerTermsOfUseTablet { display: inline-block; }
+    .footerBusinessInfoTablet { display: inline-block; }
+    .footerBusinessInfo { display: none; }
+    .footerTermsOfUseApp { display: none; }
+    
+    
+
+}

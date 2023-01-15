@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/melon_chart.css">
+    <link rel="stylesheet" href="../css/melon_chart_1024.css">
+    <link rel="stylesheet" href="../css/melon_chart_768.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <title>멜론차트</title>
+</head>
+<body>
+    <!-- 소연 사이드메뉴 -->
+    <div id="drawer_menu">
+        <div class="side_menu">
+            <div class="menu_opner">
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <i class="fa-solid fa-xmark menu_opner"></i>
+            <img src="../../images/melon_logo_menu.png" alt="멜론 로고">
+            <ul>
+                <li><strong><a href="melon_chart.html" target="" class="menu__title">멜론차트</a></strong></li>
+                <li><strong><a href="" target="" class="menu__title">최신음악</a></strong></li>
+                <li><strong><a href="" target="" class="menu__title">장르음악</a></strong></strong></li>
+                <li><strong><a href="" target="" class="menu__title">멜론DJ</a></strong></strong></li>
+                <li><strong><a href="" target="" class="menu__title">멜론TV</a></strong></li>
+                <li><strong><a href="melon_magazine.html" target="" class="menu__title">매거진</a></strong></li>
+                <li><strong><a href="" target="" class="menu__title">뮤직어워드</a></strong></li>
+                <li><strong><a href="" target="" class="menu__title">어학</a></strong></li>
+                <input id="check_btn" type="checkbox">
+                <strong><label class="menu__title" for="check_btn">My홈</label></strong>
+                <ul class="Myhome__list">
+                    <li>
+                        <div class="list__item">
+                            <a href="" target="" class="nav__link">좋아요</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list__item">
+                            <a href="" target="" class="nav__link">플레이리스트</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list__item">
+                            <a href="" target="" class="nav__link">최근들은</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list__item">
+                            <a href="" target="" class="nav__link">구매목록</a>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div id="container">
+        <!-- header 공동 소스 -->
+        <div class="melon_bar"></div>
+        <div class="header">
+            <div class="logo">
+                <a href="main.html">
+                    <img src="../../images/melon_logo.png" alt="멜론 로고">
+                </a>
+            </div>
+            <div class="header_menu">
+                <div class="header_menu_1920">
+                    <div class="search">
+                        <form action="">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                    </div>
+                    <ul class="top_menu top_menu_text">
+                        <li class="top_menu_text1"><a href="subscribe.html">이용권 구매</a></li>
+                        <li class="top_menu_text2"><a href="login.html">로그인</a></li>
+                        <li class="top_menu_text3">회원가입</li>
+                        <li class="top_menu_text4">공지사항</li>
+                    </ul>
+                </div>
+                <div class="header_menu_1024">
+                    <div class="header_menu_button menu_opner">
+                        <span class="menu_button menu_button1"></span>
+                        <span class="menu_button menu_button2"></span>
+                        <span class="menu_button menu_button3"></span>
+                    </div>
+                    <ul class="top_menu top_menu_icon">
+                        <li class="top_menu_icon1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li class="top_menu_icon2">
+                            <a href="subscribe.html">
+                                <img src="../../images/icon/ticket2.png" class="top_icon_img2" alt="멜론이용권">
+                            </a>
+                            <a href="subscribe.html">
+                                <img src="../../images/icon/ticket3.png" class="top_icon_img3" alt="멜론이용권">
+                            </a>
+                        </li>
+                        <li class="top_menu_icon3">
+                            <a href="login.html">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="top_menu_icon4">
+                            <a href="login.html">
+                                <i class="fa-regular fa-bell"></i>
+                            </a>
+                        </li>
+                    </ul>              
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 상단 메뉴 -->
+        <div id="main" class="contents_width inner_size2">
+            <div id="main_title">
+                <div class="main_title_text">
+                    <h1>TOP100</h1>
+                    <span>?</span>
+                </div>
+                <div class="main_date_time">
+                    <h2 class="main_today"></h2>
+                    <div class="main_Time"></div>
+                    <div class="main_selectTime">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="d-none"></ul>
+                    </div>
+                </div>
+            </div>
+            <ul id="main_menu" class="">
+                <li class="selected">TOP100</li>
+                <li class="">일간</li>
+                <li class="">주간</li>
+                <li class="">월간</li>
+                <li class="">시대</li>
+            </ul>
+        </div>
+
+        <!-- 차트 리스트 -->
+        <div id="chart_contents" class="contents_width">
+            <!-- TOP3 -->
+            <div class="rank_list inner_size inner_size2 inner_size3">
+                <ul class ="no_swiper" data-aos="fade-up">
+                    <li class="second_third_rank second_rank">
+                        
+                        <div class="rank_mark">
+                            <img src="../../images/melon_charts/medal_second.png" alt="2위">
+                            <span>2</span>
+                        </div>
+                        <div class="album_pic">
+                            <img src="../../images/melon_charts/album_2.jpg" alt="2위 앨범커버">
+                        </div>
+                        <div class="rank_text">
+                            <div class="rank_left_text">
+                                <div class="title_name">
+                                    <h3 class="chart_title">Hype boy</h3>
+                                    <p class="chart_artist">New Jeans</p>
+                                </div>
+                            </div>
+                            <div class="rank_right_text">
+                                <h4 class="chart_album">앨범</h4>
+                                <p class="artist_affilation">NewJeans 1st EP 'New Jeans'</p>
+                            </div>
+                        </div>
+                        <div id="rank_icon">
+                            <div class="like_button">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="heart_number"></div>
+                            </div>
+                            <div class="other_button">
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-arrow-down"></i>
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="first_rank">
+                        
+                        <div class="rank_mark">
+                            <img src="../../images/melon_charts/medal_first.png" alt="1위">
+                            <span class="rank_mark_first">1</span>
+                        </div>
+                        <div class="album_pic">
+                            <img src="../../images/melon_charts/album_1.jpg" class="album_pic_first" alt="1위 앨범커버">
+                        </div>
+                        <div class="rank_text first_rank_text">
+                            <div class="rank_left_text">
+                                <div class="title_name">
+                                    <h3 class="chart_title">Nxde</h3>
+                                    <p class="chart_artist">(여자)아이들</p>
+                                </div>
+                            </div>
+                            <div class="rank_right_text">
+                                <h4 class="chart_album">앨범</h4>
+                                <p class="artist_affilation">I love</p>
+                            </div>
+                        </div>
+                        <div id="rank_icon">
+                            <div class="like_button">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="heart_number"></div>
+                            </div>
+                            <div class="other_button">
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-arrow-down"></i>
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="second_third_rank third_rank">
+                        
+                        <div class="rank_mark">
+                            <img src="../../images/melon_charts/medal_third.png" alt="3위">
+                            <span>3</span>
+                        </div>
+                        <div class="album_pic">
+                            <img src="../../images/melon_charts/album_3.jpg" class="album_pic_second_third" alt="3위 앨범커버">
+                        </div>
+                        <div class="rank_text">
+                            <div class="rank_left_text">
+                                <div class="title_name">
+                                    <h3 class="chart_title">FLASH</h3>
+                                    <p class="chart_artist">로켓펀치(Rocket Punch)</p>
+                                </div>
+                            </div>
+                            <div class="rank_right_text">
+                                <h4 class="chart_album">앨범</h4>
+                                <p class="artist_affilation">FLASH</p>
+                            </div>
+                        </div>
+                        <div id="rank_icon">
+                            <div class="like_button">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="heart_number"></div>
+                            </div>
+                            <div class="other_button">
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-arrow-down"></i>
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper carousel" data-aos="fade-up">
+                    <ul class="swiper-wrapper">
+                        <li class="second_third_rank second_rank swiper-slide">
+                            
+                            <div class="rank_mark">
+                                <img src="../../images/melon_charts/medal_second.png" alt="2위">
+                                <span>2</span>
+                            </div>
+                            <div class="album_pic">
+                                <img src="../../images/melon_charts/album_2.jpg" alt="2위 앨범커버">
+                            </div>
+                            <div class="rank_text">
+                                <div class="rank_left_text">
+                                    <div class="title_name">
+                                        <h3 class="chart_title">Hype boy</h3>
+                                        <p class="chart_artist">New Jeans</p>
+                                    </div>
+                                </div>
+                                <div class="rank_right_text">
+                                    <h4 class="chart_album">앨범</h4>
+                                    <p class="artist_affilation">NewJeans 1st EP 'New Jeans'</p>
+                                </div>
+                            </div>
+                            <div id="rank_icon">
+                                <div class="like_button">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div class="heart_number"></div>
+                                </div>
+                                <div class="other_button">
+                                    <i class="fa-solid fa-play"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="first_rank swiper-slide">
+                            
+                            <div class="rank_mark">
+                                <img src="../../images/melon_charts/medal_first.png" alt="1위">
+                                <span class="rank_mark_first">1</span>
+                            </div>
+                            <div class="album_pic">
+                                <img src="../../images/melon_charts/album_1.jpg" class="album_pic_first" alt="1위 앨범커버">
+                            </div>
+                            <div class="rank_text first_rank_text">
+                                <div class="rank_left_text">
+                                    <div class="title_name">
+                                        <h3 class="chart_title">Nxde</h3>
+                                        <p class="chart_artist">(여자)아이들</p>
+                                    </div>
+                                </div>
+                                <div class="rank_right_text">
+                                    <h4 class="chart_album">앨범</h4>
+                                    <p class="artist_affilation">I love</p>
+                                </div>
+                            </div>
+                            <div id="rank_icon">
+                                <div class="like_button">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div class="heart_number"></div>
+                                </div>
+                                <div class="other_button">
+                                    <i class="fa-solid fa-play"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="second_third_rank third_rank swiper-slide">
+                            
+                            <div class="rank_mark">
+                                <img src="../../images/melon_charts/medal_third.png" alt="3위">
+                                <span>3</span>
+                            </div>
+                            <div class="album_pic">
+                                <img src="../../images/melon_charts/album_3.jpg" class="album_pic_second_third" alt="3위 앨범커버">
+                            </div>
+                            <div class="rank_text">
+                                <div class="rank_left_text">
+                                    <div class="title_name">
+                                        <h3 class="chart_title">FLASH</h3>
+                                        <p class="chart_artist">로켓펀치(Rocket Punch)</p>
+                                    </div>
+                                </div>
+                                <div class="rank_right_text">
+                                    <h4 class="chart_album">앨범</h4>
+                                    <p class="artist_affilation">FLASH</p>
+                                </div>
+                            </div>
+                            <div id="rank_icon">
+                                <div class="like_button">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <div class="heart_number"></div>
+                                </div>
+                                <div class="other_button">
+                                    <i class="fa-solid fa-play"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 그 외 -->
+            <div class="other_list">
+                <div class="other_list_select_option inner_size inner_size2">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-shuffle"></i>
+                            <p>셔플듣기</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-play"></i>
+                            <p>전체듣기</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-play"></i>
+                            <p>듣기</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-plus"></i>
+                            <p>담기</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-arrow-down"></i>
+                            <p>다운</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-arrow-down"></i>
+                            <p>FLAC</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gift"></i>
+                            <p>선물</p>
+                        </li>
+                    </ul>
+                    <div class="select_option_refresh">
+                        <p>새로고침</p>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+                    <div class="other_list_more">
+                        <p>더보기</p>
+                    </div>
+                </div>
+                <div class="other_list_chart_option inner_size inner_size2">
+                    <ul>
+                        <li class="chart_option_1">
+                            <input type="checkbox" id="chartOption1">
+                            <label for="chartOption1"></label>
+                        </li>
+                        <li class="chart_option_2">순위</li>
+                        <li class="chart_option_3">곡정보</li>
+                        <li class="chart_option_4">앨범</li>
+                        <li class="chart_option_5">좋아요</li>
+                        <li class="chart_option_6">듣기</li>
+                        <li class="chart_option_7">담기</li>
+                        <li class="chart_option_8">다운</li>
+                        <li class="chart_option_9">뮤비</li>
+                    </ul>
+                </div>
+                <div class="other_list_chart inner_size inner_size2 inner_size4">
+                    <ul></ul>
+                </div>
+                
+            </div>
+    </div>
+    <div class="mobile_tab_menu d-none">
+        <ul>
+            <li>
+                <div class="mobile_title_artistname">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <div class="mobile_title_icon">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </li>
+            <li class="mobile_tab_select_menu">
+                <i class="fa-solid fa-plus"></i>
+                <p>담기</p>
+            </li>
+            <li class="mobile_tab_select_menu">
+                <i class="fa-solid fa-arrow-down"></i>
+                <p>다운로드</p>
+            </li>
+            <li class="mobile_tab_select_menu">
+                <i class="fa-solid fa-video"></i>
+                <p>뮤직비디오</p>
+            </li>
+            <li class="mobile_tab_select_menu">
+                <i class="fa-solid fa-gift"></i>
+                <p>선물하기</p>
+            </li>
+            
+        </ul>
+    </div>
+    <span class="top"><i class="fa-solid fa-arrow-up"></i></span>
+    
+    <!-- 현주 footer -->
+    <div class="footer">
+        <div class="footerMenu">
+            <span>멜론6.0 둘러보기</span>
+            <span>멜론스튜디오</span>
+            <span>Windows 플레이어</span>
+            <span>Mac 플레이어</span>
+            <span>iPad</span>
+            <span>고객센터</span>
+        </div>
+        <div class="footerCont">
+            <div class="footerCenter">
+                <div class="footerTermsOfUse">
+                    <span>이용약관</span>
+                    <span class="important">위치기반서비스 이용약관</span>
+                    <span class="important">개인정보처리방침</span>
+                    <span>청소년보호정책</span>
+                    <span>제휴/프로모션문의</span>
+                    <span>이메일주소무단수집거부</span>
+                    <span>파트너센터</span>
+                </div>
+                <div class="footerTermsOfUseTablet">
+                    <div>
+                        <span>이용약관</span>
+                        <span class="important">위치기반서비스 이용약관</span>
+                        <span class="important">개인정보처리방침</span>
+                    </div>
+                    <div>
+                        <span>청소년보호정책</span>
+                        <span>제휴/프로모션문의</span>
+                    </div>
+                    <div>
+                        <span>이메일주소무단수집거부</span>
+                        <span>파트너센터</span>
+                    </div>
+                </div>
+                <div class="footerTermsOfUseApp">
+                    <div>
+                        <span>이용약관</span>
+                    </div>
+                    <div>
+                        <span class="important">위치기반서비스 이용약관</span>
+                        <span class="important">개인정보처리방침</span>
+                    </div>
+                    <div>
+                        <span>청소년보호정책</span>
+                        <span>제휴/프로모션문의</span>
+                    </div>
+                    <div>
+                        <span>이메일주소무단수집거부</span>
+                        <span>파트너센터</span>
+                    </div>
+                </div>
+                <div class="footerBusinessInfo">
+                    <div class="businessInfo1">
+                        <span class="emphasis">(주)카카오엔터테인먼트</span>
+                        <span>경기도 성남시 분당구 판교역로 221</span>
+                        <span>대표이사 이진수, 김성수</span>
+                        <span>사업자 등록번호 : 220-88-02594</span>
+                        <span>통신판매업신고번호 : 2018-성남분당B-0004</span>
+                        <span>사업정보확인></span>
+                    </div>
+                    <div class="businessInfo2">
+                        <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+                        <span>이메일 : melon_info@kakaoent.com</span>
+                        <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                        <span>© Kakao Entertainment Corp.</span>
+                    </div>
+                </div>
+                <div class="footerBusinessInfoTablet">
+                    <div class="businessInfo1">
+                        <div>
+                            <span class="emphasis">(주)카카오엔터테인먼트</span>
+                            <span>경기도 성남시 분당구 판교역로 221</span>
+                            <span>대표이사 이진수, 김성수</span>
+                        </div>
+                        <div>
+                            <span>사업자 등록번호 : 220-88-02594</span>
+                            <span>통신판매업신고번호 : 2018-성남분당B-0004</span>
+                            <span>사업정보확인></span>
+                        </div>
+                        <div>
+                            <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+                            <span>이메일 : melon_info@kakaoent.com</span>
+                        </div>
+                        <div>
+                            <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                            <span>© Kakao Entertainment Corp.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerSns">
+                <div class="twitterIcon"><i class="fa-brands fa-twitter"></i></div>
+                <div class="instagramIcon"><i class="fa-brands fa-instagram"></i></div>
+                <div class="youtubeIcon"><i class="fa-brands fa-youtube"></i></div>
+                <div class="facebookIcon"><i class="fa-brands fa-facebook-f"></i></div>
+            </div>   
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="../js/melon_chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,608 @@
+@media screen and (max-width: 1024px){
+
+
+    /* 소연 사이드 메뉴 => 고정화 */
+
+    #drawer_menu .header_fixed {
+        position: fixed;
+        z-index: 9;
+        width: 100%;
+    }
+
+    #drawer_menu div.menu_opner {
+        display: none;
+    }
+    #drawer_menu i.menu_opner {
+        display: block;
+        opacity: 0;
+        font-size: 2.5rem;
+        margin-top: .5rem;
+        padding-left: 1rem;
+        color: #333;
+    }
+
+    /* --------------------------------------- */
+
+    #top_contents {
+        width: 100%; height: 95.75vw;
+    }
+
+    .header .header_menu .top_menu > li a {
+        color: #6d6d6d;
+    }
+
+    .main_magazine_menu ul {
+        flex-direction: column;
+        align-items: flex-start !important;
+        margin: 18vw 0 0 6.3vw;
+        font-size: 2.8vw !important;
+    }
+    .main_magazine_menu ul .dividing_line { display: none; }
+
+    .main_magazine_menu ul li { margin-bottom: 1vw; }
+
+    .main_magazine_contents .first { display: none; }
+
+    .main_magazine_contents .carousel {
+        display: block;
+        width: 26vw !important;
+        margin-top: 10.7vw;
+    }
+
+    .main_magazine_contents {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        width: 25.07vw; height: 40.8vw;
+    }
+
+    .main_magazine_contents .magazine_coverimg .hover_content{
+        width: 100%; height: 100%;
+        transition: .2s;
+    }
+
+    .magazine_coverimg .hover_content .category_cover {
+        border-right: 5.5vw solid transparent;
+        border-top: 5.5vw solid #00CA3C;
+    }
+
+    .magazine_coverimg .hover_content .category_title {
+        display: none;
+    }
+
+    .magazine_coverimg .hover_content {
+        opacity: 0;
+        cursor: pointer;
+    }
+    .magazine_coverimg .hover_content:hover {
+        opacity: 1;
+    }
+
+    .magazine_coverimg .hover_content .detail_content h4 {
+        font-size: 1.46vw;
+        line-height: 2vw;
+        margin-bottom: 1.4vw;
+    }
+
+    .magazine_coverimg .hover_content .detail_content p {
+        font-size: 1.27vw;
+        line-height: 1.85vw;
+    }
+
+    .main_magazine_contents .magazine_coverimg ul li{
+        border-radius: 10px;
+        width: 100%; height: 130%;
+        overflow: hidden;
+    }
+
+    /* .magazine_coverimg 이미지 크기 및 위치 지정 */
+
+    .magazine_coverimg .coverimg_1 {
+        height: 100%;
+        margin-left: -15.5vw;
+    }
+    .magazine_coverimg .coverimg_2 {
+        height: 130%;
+        margin: -3vw 0 0 -4vw;
+    }
+    .magazine_coverimg .coverimg_3 {
+        height: 115%;
+        margin: -3vw 0 0 -14.5vw;
+    }
+    .magazine_coverimg .coverimg_4 {
+        height: 115%;
+        margin: -3vw 0 0 -7.8vw;
+    }
+
+    .main_magazine_contents .magazine_title {
+        grid-row: 1;
+    }
+    
+    .main_magazine_contents .magazine_title .title1024 { display: block; }
+    .main_magazine_contents .magazine_title .title1920 { display: none; }
+
+    .main_magazine_contents .magazine_title .title1024 {
+        width: 54.3vw !important;
+        margin: 4vw 0 0 40vw !important;
+    }
+
+    .main_magazine_contents .back_text { display: none; }
+
+    .main_magazine_contents .carousel .swiper-pagination {
+        top: 40.5vw;
+        margin: 0 36vw;
+    }
+    .main_magazine_contents .carousel .swiper-pagination span {
+        width: 0.7vw; height: 0.7vw;
+    }
+
+    /* #middle_contents */
+
+    #middle_contents .today_magazine {
+        width: 100%; height: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: inherit;
+        grid-template-columns: 100%;
+        grid-template-rows: 5.9vw 1fr;
+    }
+
+    #middle_contents .today_magazine .left_contents .today1024 { display: block; }
+    #middle_contents .today_magazine .left_contents .today { display: none; }
+
+    #middle_contents .today_magazine .left_contents {
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+        width: 86.69vw; margin: 0 auto;
+    }
+
+    .today_magazine .left_contents .today_contents {
+        margin: 0 !important;
+        align-self: flex-end;
+    }
+
+    .today_magazine .left_contents .today_contents h2 { display: none; }
+    .today_magazine .left_contents .today_contents h3 {
+        color: #3f3f3f; font-weight: bold;
+        margin: 0;
+        font-size: 2.8vw;
+    }
+
+    .today_magazine .left_contents .today_contents p {
+        font-size: 1.7vw;
+        margin-top: 1.3vw !important;
+    }
+    .today_magazine .left_contents .today_contents p br { display: none; }
+
+    #middle_contents .today_magazine .left_contents .today1024 img {
+        width: 100%;
+    }
+
+    /* .right_contents */
+
+    #middle_contents .today_magazine .right_contents {
+        width: 100%; height: 100%;
+        overflow: inherit;
+    }
+
+    #middle_contents .today_magazine .right_contents .today_new {
+        top: 2vw; left: -3vw;
+        width: 9vw; height: 3.5vw;
+    }
+    #middle_contents .today_magazine .right_contents .today_new span {
+        font-size: 1.3vw;
+    }
+
+    #middle_contents .today_magazine .right_contents ul {
+        margin-left: 6vw !important;
+    }
+
+    #middle_contents .today_magazine .right_contents ul .today_right {
+        width: 42.38vw !important;
+    }
+
+    .heart {
+        left: 2vw; bottom: 1.8vw;
+    }
+    
+    .heart .fa-heart {
+        font-size: 2.14vw;
+    }
+
+    .heart .heart_number {
+        font-size: 1.17vw !important;
+        line-height: 2.14vw;
+        margin-left: 1vw;
+    }
+
+    .right_contents .today_right .today_right_coverimg {
+        width: 42.38vw !important; 
+    }
+    .right_contents .today_right .today_right_coverimg img {
+        width: 42.38vw !important; 
+    }
+
+    /* .today_right 개별 이미지 사이즈 조절 */
+
+    /* today_right_coverimg */
+
+    .right_contents .today_right .today_right_coverimg1 {
+        width: 100% !important; height: 50vw;
+        overflow: hidden;
+    }
+    .right_contents .today_right .today_right_coverimg1 img {
+        width: 125% !important;
+    }
+
+    .right_contents .today_right .today_right_coverimg2 {
+        width: 42.38vw !important; height: 35vw;
+        overflow: hidden;
+    }
+    .right_contents .today_right .today_right_coverimg2 img {
+        width: 150% !important;
+    }
+
+    .right_contents .today_right .today_right_coverimg3 {
+        width: 42.38vw !important; height: 50vw;
+        overflow: hidden;
+    }
+    .right_contents .today_right .today_right_coverimg3 img {
+        width: 165% !important;
+        margin-left: -9vw;
+    }
+
+    .right_contents .today_right .today_right_coverimg4 {
+        width: 42.38vw !important; height: 43vw;
+        overflow: hidden;
+    }
+    .right_contents .today_right .today_right_coverimg4 img {
+        width: 120%;
+        margin: -4.5vw 0 0 -1.4vw;
+    }
+
+    #middle_contents .today_magazine .right_contents .today_right_detail .today_comment_hits {
+        width: 100%; height: 100%;
+        font-size: 1.17vw; 
+        margin: 1.2vw 0;
+    }
+    #middle_contents .today_magazine .right_contents .today_right_detail .today_comment_hits > span {
+        border-left: 1px solid #7F7F7F;
+        height: 0.6vw; 
+        margin: 0 1.3vw;
+    }
+    #middle_contents .today_magazine .right_contents .today_right_detail .today_comment_hits .hit {
+        margin-left: 1.6vw;
+    }
+
+    .right_contents .today_right_detail .today_content_detail .today_title {
+        line-height: 2.7vw;
+        font-size: 2vw;
+        margin-bottom: 1.5vw;
+    }
+    .right_contents .today_right_detail .today_content_detail .today_more_content {
+        line-height: 2.4vw;
+        font-size: 1.465vw;
+    }
+
+    /* #other_contents */
+
+    #other_contents { margin-top: 65vw; }
+
+    #other_contents .category_select {
+        width: 90.1vw;
+        margin: 7.5vw auto 0;
+    }
+
+    #other_contents .category_select ul {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 3.38vw;
+        gap: 0.9vw 1.56vw;
+        height: 100%;
+        font-size: 1.66vw;
+    }
+
+    #other_contents .category_select .more {
+        position: absolute;
+        /* bottom: 62%; */
+        bottom: 0;
+        display: block;
+        font-size: 1.75vw;
+        border: none;
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255) );
+        width: 100%; height: 9.66vw;
+        cursor: pointer;
+    }
+
+    #other_contents .category_select .more_before {
+        position: absolute;
+        bottom: -2vw; left: 50%;
+        transform: translate(-50%);
+        cursor: pointer;
+        transition: .1s;
+        width: 20%; height: 6vw;
+        text-align: center;
+        line-height: 10vw;
+        /* background-color: aqua; */
+    }
+    #other_contents .category_select .more_before:hover {
+        height: 25%;
+    }
+
+    
+    .more_before_height { height: 9.66vw; }
+    /* #other_contents .category_select .more_category li:nth-child(n+9) {
+        display: none;
+    } */
+
+
+    #other_contents .category_select h3 { font-size: 2.39vw; }
+
+    #other_contents .category_select ul li {
+        width: 100%; height: 4.19vw;
+        font-size: 1.26vw;
+        line-height: 4.19vw;
+        transition: .2s;
+    }
+
+    /* .other_magazine */
+
+    .other_magazine {
+        width: 83.7vw; margin: 0 auto;
+    }
+
+    .other_magazine > p {
+        margin-top: 6.8vw !important;
+        font-size: 2.8vw; font-weight: bold;
+    }
+
+    .other_magazine .other_contents ul {
+        margin-top: 3.7vw;
+        grid-template-columns: repeat(2, 37.7vw);
+        gap: 8.1vw;
+    }
+
+    .other_magazine .other_contents ul li {
+        width: 37.7vw;
+    }
+
+    .other_magazine .other_contents ul li .other_content_img {
+        width: 37.7vw;
+    }
+
+    .other_magazine .other_page_number ul{
+        width: 15vw;
+        margin: 10vw auto 5.9vw;
+    }
+    .other_magazine .other_page_number ul li {
+        font-size: 1.5vw;
+    }
+
+    .other_contents .other_detail .other_comment_hits {
+        font-size: 1.27vw; 
+        margin: .4vw 0;
+    }
+
+    .other_contents .other_detail .other_comment_hits > span {
+        height: 0.7vw; 
+        margin: 0 1.3vw;
+    }
+
+    .other_contents .other_detail .other_comment_hits .comment,
+    .other_contents .other_detail .other_comment_hits .hit
+    { font-size: 1vw; line-height: 1.27vw; }
+
+    .other_contents .other_detail .other_comment_hits .hit {
+        margin-left: 1.2vw;
+    }
+
+    .other_contents .other_detail .other_content_detail .other_title {
+        margin: 1.2vw 0 1vw;
+        line-height: 2.6vw;
+        font-size: 1.86vw;
+    }
+    .other_contents .other_detail .other_content_detail .other_more_content {
+        line-height: 2vw;
+        font-size: 1.36vw;
+    }
+
+    /* #magazine_email */
+
+    #magazine_email {
+        height: 51.2vw;
+    }
+
+    #magazine_email .magazine_email_contents .email_contents_left {
+        margin-left: 7.8vw;
+    }
+
+    .magazine_email_contents .email_contents_left h3 {
+        font-size: 3.7vw;
+        line-height: 5.5vw;
+    }
+    .magazine_email_contents .email_contents_left h3 .enter1 { display: block; }
+    .magazine_email_contents .email_contents_left p {
+        font-size: 1.66vw;
+        margin-top: 4.6vw;
+        line-height: 2.66vw;
+    }
+
+    /* .email_contents_right */
+
+    .magazine_email_contents .email_contents_right {
+        margin-left: 12vw;
+    }
+
+    .magazine_email_contents .email_contents_right h3 {
+        font-size: 2.53vw;
+    }
+
+    .magazine_email_contents .email_contents_right .personal_data {
+        display: block;
+        width: 37vw; height: 7vw;
+        border: none;
+        border-top-right-radius: 4vw;
+        padding-left: 4vw;
+        background-color: #f7f7f7;
+    }
+
+    .magazine_email_contents .email_contents_right .personal_data1 {
+        margin-top: 2.9vw;
+    }
+    .magazine_email_contents .email_contents_right .personal_data2 {
+        margin-top: 1.3vw;
+    }
+
+    .magazine_email_contents .email_contents_right input[id="check_fourteen"] + label,
+    .magazine_email_contents .email_contents_right input[id="check_consent"] + label
+    { width: 1.27vw; height: 1.27vw; }
+
+    .magazine_email_contents .email_contents_right .checklist {
+        margin: 2vw 0;
+    }
+
+    .magazine_email_contents .email_contents_right .checklist p {
+        font-size: 1.27vw;
+        margin-left: 1.66vw;
+    }
+    .magazine_email_contents .email_contents_right .checklist .checklist2 {
+        margin-top: 1.2vw;
+    }
+
+    .magazine_email_contents .email_contents_right .subscribe {
+        width: 17vw; height: 5vw;
+        font-size: 1.27vw;
+        line-height: 5vw;
+    }
+
+    #container .top {
+        border-radius: 4vw;
+        width: 4vw; height: 4vw;
+        position: fixed;
+        bottom: 5vw; right: 5vw;
+        transition: .1s;
+        cursor: pointer;
+    }
+    #container .top .fa-arrow-up { line-height: 4vw;}
+
+    /* 현주 footer */
+
+    .footer { 
+        background-color: #fafafa;
+        width: 100%;
+        height: 395px;
+    
+    }
+    .footer > .footerMenu {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #c1c1c1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer > .footerMenu > span {
+        display: inline-block;
+        font-size: 13px;
+        color: #333333;
+        font-weight: 800;
+    }
+    .footer > .footerMenu > span:not(:last-child) {
+        margin-right: 35px;
+    }
+    
+    .footer > .footerCont > .footerCenter { margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet { 
+        width: 500px;
+        margin: 0 auto; 
+        text-align: center;
+        line-height: 22px;
+    }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div { display: flex; justify-content: center; align-items: center; }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div > span{
+        color: #939393;
+        font-size: 11px;
+        font-weight: 600;
+        margin-top: 0;
+    }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div > span:not(:last-child){
+        margin-right: 11px;
+    }
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div > span:not(:last-child)::after{
+        margin-left: 15px;
+        content: "|";
+        color: #bfbfbf;
+        font-weight: 500;
+    }
+    
+    .footer > .footerCont > .footerCenter > .footerTermsOfUseTablet > div > .important {
+        font-weight: bolder;
+        color: #6b6b6b;
+    
+    }
+    
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet { 
+    
+        margin: 2.60vw 0; 
+    }
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 { 
+        margin-bottom: 3px; 
+        text-align: center; 
+        line-height: 18px;
+    }
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 > div > span {
+        color: #939393;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 > div > span:not(:last-child){
+        margin-right: 5px;
+    }
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 > div > span:not(:last-child)::after{
+        margin-left: 8px;
+        content: "|";
+        color: #bfbfbf;
+        font-weight: 500;
+    }
+    
+    .footer > .footerCont > .footerCenter > .footerBusinessInfoTablet > .businessInfo1 > div > .emphasis {
+        font-weight: bold;
+        color: #939393;
+    }
+    
+    .footer > .footerCont > .footerSns{
+        margin: 40px 0;
+    }
+    
+    .footer > .footerCont > .footerSns > div {
+        display: inline-block;
+    }
+    .footer > .footerCont > .footerSns > div > i {
+        font-size: 22px;
+        color: #c1c1c1;
+        margin-right: 18px;
+        transition: 0.3s;
+    }
+    .footer > .footerCont > .footerSns > div :hover {
+        color: #686868;
+    }
+    
+    .footer > .footerMenu > span:nth-child(n+3):nth-child(-n+4){
+        display: none;
+    }
+    .footer > .footerCont { 
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footerTermsOfUse { display: none; }
+    .footerTermsOfUseTablet { display: inline-block; }
+    .footerBusinessInfoTablet { display: inline-block; }
+    .footerBusinessInfo { display: none; }
+    .footerTermsOfUseApp { display: none; }
+
+}

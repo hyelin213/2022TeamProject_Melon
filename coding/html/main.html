@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="../css/main(1024px).css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css/main(768px) .css" />
+    <link rel="shortcut icon" href="../images/파비콘-멜론로고.png">
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <title>멜론메인</title>
+</head>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+<body>
+    <div id="container">
+        <div class="melon_bar"></div>
+        <div class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="../../images/main/melon_logo.png" class="main_logo" alt="멜론 로고">
+                </a>
+                <div id="origin_side_menu">
+                    <div class="origin_side_menu">
+                        <ul>
+                            <li><strong><a href="melon_chart.html" target="" class="origin_menu__title">멜론차트</a></strong></li>
+                            <li><strong><a href="" target="" class="origin_menu__title">최신음악</a></strong></li>
+                            <li><strong><a href="" target="" class="origin_menu__title">장르음악</a></strong></strong></li>
+                            <li><strong><a href="" target="" class="origin_menu__title">멜론DJ</a></strong></strong></li>
+                            <li><strong><a href="" target="" class="origin_menu__title">멜론TV</a></strong></li>
+                            <li><strong><a href="melon_magazine.html" target="" class="origin_menu__title">매거진</a></strong></li>
+                            <li><strong><a href="" target="" class="origin_menu__title">뮤직어워드</a></strong></li>
+                            <li><strong><a href="" target="" class="origin_menu__title">어학</a></strong></li>
+                            <input id="check_btn" type="checkbox">
+                            <strong><label class="origin_menu__title" for="check_btn">My홈</label></strong>
+                            <ul class="origin_Myhome__list">
+                                <li>
+                                    <div class="origin_list__item">
+                                        <a href="" target="" class="origin_nav__link">좋아요</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="origin_list__item">
+                                        <a href="" target="" class="origin_nav__link">플레이리스트</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="origin_list__item">
+                                        <a href="" target="" class="origin_nav__link">최근들은</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="origin_list__item">
+                                        <a href="" target="" class="origin_nav__link">구매목록</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_menu">
+                <div class="header_menu_1920">
+                    <div class="search">
+                        <form action="">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                    </div>
+                    <ul class="top_menu top_menu_text">
+                        <li class="top_menu_text"><a href="subscribe.html">이용권 구매</a></li>
+                        <li class="top_menu_text"><a href="login.html">로그인</a></li>
+                        <li class="top_menu_text">회원가입</li>
+                        <li class="top_menu_text">공지사항</li>
+                    </ul>
+                </div>
+                <div class="header_menu_1024">
+                    <div class="header_menu_button">
+                        <span class="menu_button1"></span>
+                        <span class="menu_button2"></span>
+                        <span class="menu_button3"></span>
+                    </div>
+                    <ul class="top_menu top_menu_icon">
+                        <li class="top_menu_icon1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li class="top_menu_icon2">
+                            <a href="subscribe.html">
+                                <img src="../../images/main/ticket2.png" class="top_icon_img2" alt="멜론이용권">
+                            </a>
+                            <a href="subscribe.html">
+                                <img src="../../images/main/ticket3.png" class="top_icon_img3" alt="멜론이용권">
+                            </a>
+                        </li>
+                        <li class="top_menu_icon3">
+                            <a href="login.html">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="top_menu_icon4">
+                            <i class="fa-regular fa-bell"></i>
+                        </li>
+                    </ul>              
+                </div>
+                    <div class="new_music">
+                        <div id="title_text">최신앨범</div>
+                        <div class="new_music_list">
+                            <ul class="new_music_item">
+                                <li class="new_music_box">
+                                    <img src="../../images/main/최신음악_1.jpg" alt="최신음악_1" class="new_music_img">
+                                    <div class="new_music_text_box">
+                                        <a href="album(swiper).html" target="" class="new_music_text_link">
+                                            <div class="new_music_text">
+                                                <strong><div>NewJeans</div></strong> 
+                                                <div class="new_music_text_album">NewJeans 1st EP 'New Jeans'</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="new_music_box">
+                                    <img src="../../images/main/최신음악_2.jpg" alt="최신음악_2" class="new_music_img">
+                                    <div class="new_music_text_box">
+                                        <a href="album(swiper).html" target="" class="new_music_text_link">
+                                            <div class="new_music_text">
+                                                <strong><div>정국, BTS</div></strong> 
+                                                <div class="new_music_text_album">Dreamers [Music from the FIFA World Cup··]</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="new_music_box">
+                                    <img src="../../images/main/최신음악_3.jpg" alt="최신음악_3" class="new_music_img">
+                                    <div class="new_music_text_box">
+                                        <a href="album(swiper).html" target="" class="new_music_text_link">
+                                            <div class="new_music_text">
+                                                <strong><div>IVE(아이브)</div></strong> 
+                                                <div class="new_music_text_album">LOVE DIVE</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="new_music_box">
+                                    <img src="../../images/main/최신음악_4.jpg" alt="최신음악_4" class="new_music_img">
+                                    <div class="new_music_text_box">
+                                        <a href="album(swiper).html" target="" class="new_music_text_link">
+                                            <div class="new_music_text">
+                                                <strong><div>BLACKPINK</div></strong> 
+                                                <div class="new_music_text_album">BORN PINK</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="new_music_box">
+                                    <img src="../../images/main/최신음악_5.jpg" alt="최신음악_5" class="new_music_img">
+                                    <div class="new_music_text_box">
+                                        <a href="album(swiper).html" target="" class="new_music_text_link">
+                                            <div class="new_music_text">
+                                                <strong><div>Various Artists</div></strong> 
+                                                <div class="new_music_text_album">쇼미더머니 11 Episode 1</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="now_playing_melon_chart">
+                        <div class="melon_chart_box">
+                            <div id="title_text" class="melon_chart">멜론 차트</div>
+                            <ul class="chart_box">
+                            <div class="chart_list_part">
+                                <div class="chart_list_part_1">
+                                    <li class="chart_list">
+                                        <div class="chart_num">1</div>
+                                        
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_1.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                            
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>사건의 지평선</div></strong>
+                                                    <div>윤하(YOUNHA)</div>
+                                                </div>
+                                                <div id="chart_play_album">YOUNHA 6th Album Rep...</div>
+                                            </div>
+                                            
+                                        
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                        
+                                                <div class="heart_count">175,724</div>
+                                        
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                            
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="chart_list">
+                                        <div class="chart_num">2</div>
+                                            
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_2.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>ANTIFRAGILE</div></strong>
+                                                    <div>LE SSERAFIM (르세라핌)</div>
+                                                </div>
+                                                <div id="chart_play_album">ANTIFRAGILE</div>
+                                            </div>
+                                        
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                        
+                                                <div class="heart_count">175,724</div>
+                                        
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                        
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="chart_list">
+                                        <div class="chart_num">3</div>
+                                        
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_3.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>Hype boy</div></strong>
+                                                    <div>NewJeans</div>
+                                                </div>
+                                                <div id="chart_play_album">NewJeans 1st EP 'New Jea...</div>
+                                            </div>
+                                            
+                                            
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                                
+                                                <div class="heart_count">175,724</div>
+                                                
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                                
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                
+                                <div class="chart_list_part_2">
+                                    <li class="chart_list">
+                                        <div class="chart_num">4</div>
+                                        
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_4.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>After LIKE</div></strong>
+                                                    <div>IVE(아이브)</div>
+                                                </div>
+                                                <div id="chart_play_album">After LIKE</div>
+                                            </div>
+                                            
+                                            
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                                
+                                                <div class="heart_count">175,724</div>
+                                                
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                                
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="chart_list">
+                                        <div class="chart_num">5</div>
+                                        
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_5.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>Nxde</div></strong>
+                                                    <div>(여자)아이들</div>
+                                                </div>
+                                                <div id="chart_play_album">I love</div>
+                                            </div>
+                                            
+                                            
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                                
+                                                <div class="heart_count">175,724</div>
+                                                
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                                
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="chart_list">
+                                        <div class="chart_num">6</div>
+                                        
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_6.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>새삥 (Prod. ZICO)...</div></strong>
+                                                    <div>지코 (ZICO)</div>
+                                                </div>
+                                                <div id="chart_play_album">스트릿 맨 파이터(SMF)...</div>
+                                            </div>
+                                            
+                                            
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                                
+                                                <div class="heart_count">175,724</div>
+                                                
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                                
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+
+                                <div class="chart_list_part_3">
+                                    <li class="chart_list">
+                                        <div class="chart_num">7</div>
+                                        
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_7.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>Dreamers [Music from the FIF...</div></strong>
+                                                    <div>정국,BTS</div>
+                                                </div>
+                                                <div id="chart_play_album">Dreamers [Music from th...</div>
+                                            </div>
+                                            
+                                            
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                                
+                                                <div class="heart_count">175,724</div>
+                                                
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                                
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="chart_list">
+                                        <div class="chart_num">8</div>
+                                        
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_8.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>Attention</div></strong>
+                                                    <div>NewJeans</div>
+                                                </div>
+                                                <div id="chart_play_album">NewJeans 1st EP 'New Jeans'...</div>
+                                            </div>
+                                            
+                                            
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                                
+                                                <div class="heart_count">175,724</div>
+                                                
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                                
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="chart_list">
+                                        <div class="chart_num">9</div>
+                                        
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_9.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>마이웨이 (MY WAY) (Prod. R.Tee)...</div></strong>
+                                                    <div>저스디스 (JUSTHIS), R.Tee...</div>
+                                                </div>
+                                                <div id="chart_play_album">쇼미더머니 11 Episode 1</div>
+                                            </div>
+                                            
+                                            
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                                
+                                                <div class="heart_count">175,724</div>
+                                                
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                                
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+
+                                <div class="chart_list_part_4">
+                                    <li class="chart_list">
+                                        <div class="chart_num">10</div>
+                                        
+                                        <div class="chart_img_box">
+                                            <img id="chart_img" src="../../images/main/멜론차트_10.jpg">
+                                            <div class="chart_img_play_box">
+                                                <div class="chart_img_play"><i class="fi fi-br-play"></i></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chart_align">
+                                            <div class="chart_text">
+                                                <div class="chart_name">
+                                                    <strong><div>LOVE DIVE</div></strong>
+                                                    <div>IVE (아이브)</div>
+                                                </div>
+                                                <div id="chart_play_album">LOVE DIVE</div>
+                                            </div>
+                                            
+                                            
+                                            <div class="chart_icons">
+                                                <button type="button" title="좋아요" class="button_icons">
+                                                    <div id="chart_heart_icon"><i class="fa-regular fa-heart"></i></div>
+                                                </button>
+                                                
+                                                <div class="heart_count">175,724</div>
+                                                
+                                                <button type="button" title="듣기" class="button_icons">
+                                                    <div id="chart_play_icon"><i class="fi fi-br-play"></i></div>
+                                                </button>
+                                                
+                                                <button type="button" title="담기" class="button_icons">
+                                                    <div id="chart_plus_icon"><i class="fa-solid fa-plus"></i></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                
+                            </div>
+                            </ul>
+                        </div>
+                        <div class="now_playing_box">
+                            <div id="title_text" class="now_playing_title">Now playing</div>
+                            
+                            
+                            <div class="now_playing">
+                                <img src="../../images/main/사건의 지평선.jpg" id="imges">
+                                
+                                <div class="now_playing_resize">
+                                    <div id="playing_text">
+                                        <strong><div class="playing">사건의 지평선</div></strong>
+                                        <div class="playing">윤하(YOUNHA)</div>
+                                    </div>
+                                    <div id="playing_bar">
+                                        <div class="play_time_start"> 00:00 </div>
+                                        <div class="play_progress_box">
+                                            <div class="play_progress_bar"></div>
+                                        </div>
+                                        <div class="play_time_end"> 00:00 </div>
+                                    </div>
+                                    <div class="play_button">
+                                        <img src="../../images/main/shuffle-arrows.png" id="shuffle">
+                                        <img src="../../images/main/play-and-pause-button(1).png" id="play_and_pause_1">
+                                        <img src="../../images/main/pause.png" id="pause">
+                                        <img src="../../images/main/play-and-pause-button(2).png" id="play_and_pause_2">
+                                        <img src="../../images/main/repeat.png" id="repeat">
+                                    </div>
+                                    <div class="play_button_resize">
+                                        <img src="../../images/main/pause.png" id="pause">
+                                        <img src="../../images/main/play-and-pause-button(2).png" id="play_and_pause_2">
+                                    </div>
+                                </div>
+                        
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerMenu">
+                <span>멜론6.0 둘러보기</span>
+                <span>멜론스튜디오</span>
+                <span>Windows 플레이어</span>
+                <span>Mac 플레이어</span>
+                <span>iPad</span>
+                <span>고객센터</span>
+            </div>
+            <div class="footerCont">
+                <div class="footerCenter">
+                    <div class="footerTermsOfUse">
+                        <span>이용약관</span>
+                        <span class="important">위치기반서비스 이용약관</span>
+                        <span class="important">개인정보처리방침</span>
+                        <span>청소년보호정책</span>
+                        <span>제휴/프로모션문의</span>
+                        <span>이메일주소무단수집거부</span>
+                        <span>파트너센터</span>
+                    </div>
+                    <div class="footerTermsOfUseTablet">
+                        <div>
+                            <span>이용약관</span>
+                            <span class="important">위치기반서비스 이용약관</span>
+                            <span class="important">개인정보처리방침</span>
+                        </div>
+                        <div>
+                            <span>청소년보호정책</span>
+                            <span>제휴/프로모션문의</span>
+                        </div>
+                        <div>
+                            <span>이메일주소무단수집거부</span>
+                            <span>파트너센터</span>
+                        </div>
+                    </div>
+                    <div class="footerTermsOfUseApp">
+                        <div>
+                            <span>이용약관</span>
+                        </div>
+                        <div>
+                            <span class="important">위치기반서비스 이용약관</span>
+                            <span class="important">개인정보처리방침</span>
+                        </div>
+                        <div>
+                            <span>청소년보호정책</span>
+                            <span>제휴/프로모션문의</span>
+                        </div>
+                        <div>
+                            <span>이메일주소무단수집거부</span>
+                            <span>파트너센터</span>
+                        </div>
+                    </div>
+                    <div class="footerBusinessInfo">
+                        <div class="businessInfo1">
+                            <span class="emphasis">(주)카카오엔터테인먼트</span>
+                            <span>경기도 성남시 분당구 판교역로 221</span>
+                            <span>대표이사 이진수, 김성수</span>
+                            <span>사업자 등록번호 : 220-88-02594</span>
+                            <span>통신판매업신고번호 : 2018-성남분당B-0004</span>
+                            <span>사업정보확인></span>
+                        </div>
+                        <div class="businessInfo2">
+                            <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+                            <span>이메일 : melon_info@kakaoent.com</span>
+                            <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                            <span>© Kakao Entertainment Corp.</span>
+                        </div>
+                    </div>
+                    <div class="footerBusinessInfoTablet">
+                        <div class="businessInfo1">
+                            <div>
+                                <span class="emphasis">(주)카카오엔터테인먼트</span>
+                                <span>경기도 성남시 분당구 판교역로 221</span>
+                                <span>대표이사 이진수, 김성수</span>
+                            </div>
+                            <div>
+                                <span>사업자 등록번호 : 220-88-02594</span>
+                                <span>통신판매업신고번호 : 2018-성남분당B-0004</span>
+                                <span>사업정보확인></span>
+                            </div>
+                            <div>
+                                <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+                                <span>이메일 : melon_info@kakaoent.com</span>
+                            </div>
+                            <div>
+                                <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                                <span>© Kakao Entertainment Corp.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerSns">
+                    <div class="twitterIcon"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="instagramIcon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="youtubeIcon"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="facebookIcon"><i class="fa-brands fa-facebook-f"></i></div>
+                </div>   
+            </div>
+        </div>
+        <div id="drawer_menu">
+            <div class="side_menu">
+                <div class="menu_opner">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <i class="fa-solid fa-xmark menu_opner"></i>
+                <img src="../../images/main/melon_logo_menu.png" alt="멜론 로고">
+                <ul>
+                    <li><strong><a href="melon_chart.html" target="" class="menu__title">멜론차트</a></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">최신음악</a></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">장르음악</a></strong></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">멜론DJ</a></strong></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">멜론TV</a></strong></li>
+                    <li><strong><a href="melon_magazine.html" target="" class="menu__title">매거진</a></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">뮤직어워드</a></strong></li>
+                    <li><strong><a href="" target="" class="menu__title">어학</a></strong></li>
+                    <input id="check_btn" type="checkbox">
+                    <strong><label class="menu__title" for="check_btn">My홈</label></strong>
+                    <ul class="Myhome__list">
+                        <li>
+                            <div class="list__item">
+                                <a href="" target="" class="nav__link">좋아요</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <a href="" target="" class="nav__link">플레이리스트</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <a href="" target="" class="nav__link">최근들은</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <a href="" target="" class="nav__link">구매목록</a>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    
+        <script src="../js/sidemenu.js"></script>
+    </body>
+    </html>
+    </div>

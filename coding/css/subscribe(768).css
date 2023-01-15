@@ -1,0 +1,190 @@
+
+@media (min-width:769px) and (max-width:1024px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #container {
+        background-image: url(../../images/album_ticket/subscribe/web/그라데이션\ 배경\(원본\).png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 70px;
+        width: 100%;
+    }
+    .logo { cursor: pointer; }
+    #nav_menu {
+        color: #5b5b5b;
+        display: grid;
+        grid-template-columns: 1fr 156.25px 156.25px 156.25px 156.25px 1fr;
+    }
+    #nav_menu > .nav_item {
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 700;
+        cursor: pointer;
+        margin: 50px 30px 10px 30px;
+        padding: 0px;
+    }
+    #nav_menu > li:first-child { color: #6b86ed; }
+    #nav_menu > .nav_item:hover {
+        color: #6b86ed;
+    }
+    .ticket { text-align: center; }
+    .ticket_1 { 
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner {
+        position: absolute;
+        top: 30px;
+        cursor: pointer;
+    }
+    .banner > .choi > .banner_img_tablet { 
+        padding: 0 55px; 
+        margin: 0 50px; 
+    }
+    .box_streaming {
+        display: flex;
+        /*justify-content: space-between;*/
+        top: 2.8646vw;
+        background-color: #ffffff6a;
+        padding: 1.8229vw;
+        border-radius: 30px;
+        margin: 40px 105px;
+        cursor: pointer;
+
+        width: 555px;
+        height: 105px;
+    }
+    .box_streaming:hover {
+        box-shadow: 1px 3px 7px 0.5px #6b85ed3a;
+        background-color: #ffffffa5; ;
+    }
+    .box_streaming > .left {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .box_streaming > .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .title_lable{ margin-bottom: 10px; }
+
+    .price_normal, .price_final { 
+        margin-right: 1.0417vw;
+    
+    }
+    .buyBtn {
+        background-color: #6b86ed;
+
+        width: 50px;
+        height: 25px;
+        border-radius: 25px;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        align-items: center;
+
+        margin-right: 15px;
+    }
+    /*
+    .buyBtn:hover{
+        box-shadow: 0 80px 0 0  rgba(0,0,0,0.25) inset, 
+                    0 -80px 0 0 rgba(0,0,0,0.25) inset;
+    }*/
+    .box_streaming {
+        position: relative;
+    }
+    .title_lable {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .point {
+        color: #6b86ed;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .title_value {
+        font-size: 14px;
+        font-weight: bold;
+        color: #5b5b5b;
+    }
+    .top_menu_tab li a i{
+        font-size: 1.3rem;
+        color: #5b5b5b;
+    }
+    .price_normal {
+
+        font-size: 15px;
+        font-weight: bolder;
+        color: #828282;
+        padding: 0 0.5208vw;
+        text-decoration: line-through;
+        margin-bottom: 5px;
+    }
+    .price_final {
+
+        font-size: 16px;
+        font-weight: bolder;
+        color: #6b86ed;
+        padding: 0 0.5208vw;
+    }
+    .product_warning_title{
+        margin: 30px 0px 10px 0px;
+        font-weight: bold;
+    }
+    .product_warning_title > p{
+        font-size: 13px;
+        padding: 0;
+        color: #4c4c4c;
+    }
+    .product_warning_list > li {
+        margin: 20px 0px;
+        line-height: 19px;
+        font-size: 10px;
+        font-weight: bold;
+        color: #4c4c4c;
+    
+    }
+    .product_warning_box {
+        width: 625px;
+        margin: 0 auto;
+
+    }
+    .ticket_img {
+        display: none;
+    } 
+    .ticket_img_tablet { display: inline-block; }
+    .banner_img { display: none; }
+    .banner_img_tablet { display: inline-block; }
+    .box_streaming:not(:nth-child(-n+4)){
+        display: none;
+    }
+    .box2 { 
+        padding-top: 10px; 
+        margin-top: 0px; }
+    .swipe > i { 
+        font-size: 40px; 
+        color: #828282;
+        display: flex;
+        justify-content: center;
+        margin-top: 53px;
+    }
+    .underLine { width: 156.25px; height: 3px; background-color: #6b86ed; justify-content: center; }
+
+    .purchase { display: block; font-size: 24px; font-weight: bolder; text-align: center; margin-top: 60px; }
+    .wrap { display: grid; grid-template-rows: 1fr 900px 1fr; }
+    .ticket_img_app { display: none; }
+    .banner_img_app { display: none; }
+
+}
