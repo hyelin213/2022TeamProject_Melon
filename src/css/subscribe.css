@@ -1,0 +1,254 @@
+
+html {scroll-behavior: smooth;}
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    background-image: url(../../images/album_ticket/subscribe/web/그라데이션\ 배경\(원본\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+    width: 100%;
+}
+.logo { cursor: pointer; }
+#nav_menu {
+    text-align: center;
+    color: #5b5b5b;
+}
+#nav_menu > .nav_item {
+    display: inline-block;
+    margin: 90px 50px 19px 50px;
+    font-size: 22px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#nav_menu > li:first-child { color: #6b86ed; }
+#nav_menu > li.nav_item:hover {
+    color: #6b86ed;
+}
+
+#nav_menu .blue {
+    color: #6b86ed;
+}
+
+
+.ticket { text-align: center; }
+.ticket_1 { 
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner { 
+    position: absolute;
+    top: 33px;
+    cursor: pointer;
+}
+.banner > .choi > .banner_img { padding: 0 50px;}
+.banner_img { width: 100%; }
+.box_streaming {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 117px;
+    width: 850px;
+    top: 2.8646vw;
+    background-color: #ffffff6a;
+    padding: 1.8229vw;
+    border-radius: 30px;
+    margin: 45px 75px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.box2 { margin-top: 60px; }
+.box_streaming {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transform: translateZ(0);
+  }
+  .box_streaming:hover {
+    transform: scale(1.02);
+  }
+
+
+
+
+.box_streaming:hover {
+    box-shadow: 1px 3px 7px 0.5px #6b85ed3a;
+    background-color: #ffffffa5; ;
+}
+.box_streaming > .left {
+    margin-left: 1.0417vw;
+    width: 330px;
+}
+.box_streaming > .right {
+    display: flex;
+    align-items: center;
+
+    margin-left: 5.7708vw;
+
+}
+
+
+.price_normal, .price_final { 
+    padding-right: 1.0417vw;
+}
+
+
+
+
+
+.buyBtn {
+    background-color: #6b86ed;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 70px;
+    height: 35px;
+    justify-content: center;
+    margin: 0.4167vw 1.0417vw 0.4167vw 0 ;
+
+}
+
+@keyframes pulse {
+    25% {
+      transform: scale(1.1);
+    }
+    75% {
+      transform: scale(0.9);
+    }
+  }
+  .buyBtn {
+    display: inline-block;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .buyBtn:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+
+
+
+
+
+
+
+
+
+.title_lable {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.point {
+    color: #6b86ed;
+    font-weight: bold;
+    font-size: 20px;
+}
+.title_value {
+    font-size: 15px;
+    font-weight: bold;
+    color: #5b5b5b;
+}
+.price_normal {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #828282;
+
+    text-decoration: line-through;
+}
+.price_final {
+    font-size: 19px;
+    font-weight: bolder;
+    color: #6b86ed;
+    padding: 0 0.5208vw;
+}
+.product_warning_title{
+    margin: 50px 5px 10px 5px;
+    font-weight: bold;
+}
+.product_warning_title > p{
+    font-size: 13px;
+    padding: 0;
+    color: #4c4c4c;
+}
+.product_warning_list > li {
+    margin: 20px 5px;
+    line-height: 19px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #4c4c4c;
+
+}
+.product_warning_box {
+    width: 988px;
+    margin: 0 auto;
+
+}
+.ticket_img { width: 100%; }
+.ticket_img_tablet { display: none; }
+.banner_img_tablet { display: none; }
+
+.swipe > i { display: none; }
+
+
+.purchase { display: none; }
+.ticket_img_app { display: none; }
+.banner_img_app { display: none; }
+
+.choi_1{
+    display: none;
+}
+
+
+
+
+
+
+/*
+.nav_item {
+    transition: all 0.2s ease-in-out;
+  }
+.nav_item:hover {
+    transform: scale(1.1);
+  }
+*/
+@keyframes hover {
+    50% {
+      transform: translateY(-3px);
+    }
+    100% {
+      transform: translateY(-6px);
+    }
+  }
+  .nav_item {
+    display: inline-block;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .nav_item:hover {
+    transform: translateY(-6px);
+    animation-name: hover;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  

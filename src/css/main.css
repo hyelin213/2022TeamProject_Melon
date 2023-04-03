@@ -1,0 +1,580 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+*:focus { outline: none; }
+html { scroll-behavior: smooth;}
+ul, ol { list-style: none; }
+a { text-decoration: none; }
+
+#container {
+    overflow: hidden;
+}
+
+.melon_bar { 
+    border-top: 6px solid #02cd39;
+}
+
+.header {
+    /*padding-top: 35px;*/
+    /*width: 94.79%;*/
+    margin: 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /*추가*/
+    z-index: 1; 
+}
+
+.header .logo { padding-top: 0.52vw; }
+
+.header .header_menu .header_menu_1920 { 
+    display: flex; 
+    justify-content: flex-end;
+    margin: 1.3vw 9vw 0 0;
+}
+
+.header_menu {padding-top: 1.82vw;} /*추가*/
+
+/* .header > .search > form > input */
+
+.header .search form { position: relative; }
+
+.header .search input {
+    width: 290px; height: 33px;
+    border-radius: 30px;
+    padding-left: 30px;
+    border: 1px solid #cacaca;
+    background-color: inherit;
+    font-size: .7rem; color: #a8a8a8;
+}
+
+.header .search input::placeholder{ color: #a8a8a8; }
+
+.header .search input:focus{ outline: none; }
+
+.header .search .fa-magnifying-glass{
+    font-size: 0.5rem; color: #a8a8a8;
+    line-height: 30px;
+    position: absolute;
+    left: 15px;
+}
+
+/* .top_menu 1920px */
+
+.top_menu_icon, .header_menu_button { display: none; }
+
+.header .header_menu .top_menu { margin-left: 35px; }
+
+.header .header_menu .top_menu > li,
+.header .header_menu .top_menu > li a {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 0.8rem;
+    color: #dbdbdb;
+    cursor: pointer;
+}
+.header .top_menu li:not(:first-child) { margin-left: 22px; }
+
+
+
+/* menu */
+
+
+.logo {
+    background-color: #f7f7f7;
+    width: 16.67vw;
+}
+
+.main_logo {
+    margin: 3.13vw;
+    width: 9.06vw;
+}
+
+.top_icon {
+    height: 0;
+}
+
+.small_logo {
+    width: 0;
+}
+
+.ticket_icon {
+    width: 0;
+}
+
+.menu_icon {
+    width: 0;
+}
+
+
+.origin_menu__title {
+    display: block;
+    cursor: pointer;
+    padding: 0.73vw 0;
+    margin: 0 0 0 3.13vw;
+    font-size: 1.15vw;
+    color: black;
+}
+
+.origin_menu__title:visited { /* 호버 효과 변경 */
+    color: black;
+}
+
+.origin_menu__title:hover {
+    color: #a8a8a8; 
+}
+
+.origin_nav__link:visited {
+    color: black;
+}
+
+.origin_nav__link:hover {
+    color: #a8a8a8;
+}
+
+#check_btn { 
+    display: none; 
+}
+
+#check_btn:checked ~ .origin_Myhome__list { 
+    display: block;
+} 
+
+.origin_Myhome__list { 
+    display: none; 
+}
+
+.origin_list__item {
+    display: block;
+    padding: 0.52vw 0;
+    margin: 0 0 0 4.17vw;
+    font-size: 1.04vw;
+}
+
+#header_menu_id {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+/*타이틀 텍스트 전체효과*/
+
+#title_text { 
+    font-size: 1.15vw;
+    font-weight: bold;
+}
+
+
+
+/* 최신 음악 */
+
+
+.new_music {
+    margin-left: 4.17vw;
+}
+
+.new_music_item {
+    display: flex;
+    margin-top: 1.56vw;
+    margin: 1.04vw;    
+}
+
+.new_music_item img {
+    width: 14.89vw;
+    border-radius: 10%;
+    margin: 1.04vw;
+}
+/*최신 음악 마우스 호버 추가*/
+.new_music_box {
+    position: relative;
+    width: 14.89vw;
+    border-radius: 10%;
+    margin-right: 1.5vw;
+}
+
+
+.new_music_item_img {
+    display: block;
+    width: 14.89vw;
+    border-radius: 10%;
+    margin: 1.04vw;
+}
+
+.new_music_text_box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 14.89vw;
+    height: 14.89vw;
+    border-radius: 10%;
+    margin: 1.04vw;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #333333;
+}
+
+.new_music_box:hover .new_music_text_box {
+    opacity: 0.7;
+}
+
+.new_music_text {
+    display: flex;
+    flex-flow: column;
+    color: white;
+    font-size: 1.2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.new_music_text_album {
+    margin-top: 0.5vw;
+}
+
+
+/* 멜론 차트 */
+
+
+.now_playing_melon_chart {
+    display: flex;
+    margin: 0.5vw 5vw 0 4.17vw;
+    position:relative;
+}
+
+.melon_chart_box{
+    width: 40vw;
+    height:29.69vw;
+}
+
+.chart_box {
+    margin-top: 2.60vw;
+}
+
+.chart_num {
+    font-size: 0.79vw;
+    margin: 0 2.08vw;
+    font-weight: bold;
+}
+
+.chart_list {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    margin-bottom: 1.04vw;
+    width: 44.27vw;
+    height: 4.95vw;
+    border-radius: 0.78vw;
+}
+
+.chart_list:hover .chart_text { color: #02cd39; }
+.chart_list:hover .chart_img_play_box { opacity: 0.5; }
+
+.chart_img_box {
+    position: relative;
+    width: 5vw;
+}
+
+#chart_img {
+    display: block;
+    width: 5vw;
+}
+
+.chart_img_play_box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 5vw;
+    height: 5vw;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #333333;
+}
+.chart_img_play {
+    display: flex;
+    flex-flow: column;
+    color: white;
+    font-size: 1.2vw;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.chart_align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35vw;
+    margin-right: 1.5vw;
+}
+
+.chart_text {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.83vw;
+    width: 20vw;
+    margin-left: 2.6vw;
+}
+
+#chart_play_album {
+    font-size: 0.83vw;
+}
+
+button {
+    background-color: transparent; /* 뒷 배경을 부모와 같게 맞춰줌*/
+    border: 0;
+}
+
+.chart_icons {
+    display: flex;
+    justify-items: end;
+    margin-right: 0.5vw;
+}
+
+.button_icons {
+    cursor: pointer;
+    font-size: 0.79vw;
+    margin-left: 1.5vw;
+}
+
+.heart_count {
+    font-size: 0.79vw;
+    margin-left: 0.52vw;
+}
+
+#chart_heart_icon {
+    color: red;
+}
+
+#chart_play_icon {
+    color: #02cd39;
+}
+
+.chart_list_part_3, .chart_list_part_4 {
+    display: none;
+}
+
+
+/* now_playing */
+
+
+.now_playing_box {
+    margin-left: 8vw;
+}
+
+.now_playing {
+    display: flex;
+    flex-direction: column;
+    width: 29.32vw;
+    background-color: #f7f7f7;
+    border-radius: 1.04vw;
+    margin-top: 2.06vw;
+    height: 24.74vw;
+    
+}
+
+#imges {
+    width: 9.84vw;
+    border-radius: 15%;
+    margin: 1.82vw 10vw 0 9.8vw;
+}
+
+#playing_text {
+    font-size: 0.88vw;
+    margin: 1.04vw 8vw;
+}
+
+.playing {
+    text-align: center;
+    margin-top: 0.52vw;
+}
+
+#playing_bar {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.3vw 0.52vw 0 0.52vw;
+}
+
+.play_progress_box {
+    display: inline-block;
+    font-size: 0.73vw;
+    background: #fff;
+    width: 13.02vw;
+    height: 0.26vw;
+    border: solid 0.03vw #ddd;
+    vertical-align: middle
+}
+.play_progress_bar {
+    width: 0.78vw;
+    height: 100%;
+    background: #02cd39;
+}
+
+.play_time_start {
+    font-size: 0.78vw;
+}
+
+.play_time_end {
+    font-size: 0.78vw;
+}
+
+.play_button {
+    display: flex;
+    justify-content:space-evenly;
+    cursor: pointer;
+    margin-top: 2.5vw;
+}
+
+
+.play_button img {
+    width: 1.04vw;
+}
+
+.play_button_resize img{
+    width: 0;
+}
+
+
+
+/*footer*/
+
+
+.footer {
+    background-color: #fafafa;
+    width: 100%;
+    height: 265px;
+    position:relative;
+    z-index: 10; 
+}
+.footer > .footerMenu {
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid #c1c1c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer > .footerMenu > span {
+    display: inline-block;
+    font-size: 13px;
+    color: #333333;
+    font-weight: 800;
+}
+.footer > .footerMenu > span:not(:last-child) {
+    margin-right: 1.56vw;
+}
+.footer > .footerCont > .footerCenter { 
+    margin-left: 20.83vw;
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUse { 
+    margin: 1.82vw 0; 
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUse > span{
+    color: #939393;
+    font-size: 0.57vw;
+    font-weight: 600;
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUse > span:not(:last-child){
+    margin-right: 0.57vw;
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUse > span:not(:last-child)::after{
+    margin-left: 0.78vw;
+    content: "|";
+    color: #bfbfbf;
+    font-weight: 500;
+}
+.footer > .footerCont > .footerCenter > .footerTermsOfUse > .important {
+    font-weight: bold;
+    color: #6b6b6b;
+}
+.footer > .footerCont > .footerCenter > .footerBusinessInfo { 
+    margin: 2.60vw 0; 
+}
+.footer > .footerCont > .footerCenter > .footerBusinessInfo > .businessInfo1 { margin-bottom: 3px; }
+.footer > .footerCont > .footerCenter > .footerBusinessInfo > .businessInfo1 > span {
+    color: #939393;
+    font-size: 9px;
+    font-weight: 500;
+}
+.footer > .footerCont > .footerCenter > .footerBusinessInfo > .businessInfo1 > span:not(:last-child){
+    margin-right: 3px;
+}
+.footer > .footerCont > .footerCenter > .footerBusinessInfo > .businessInfo1 > span:not(:last-child)::after{
+    margin-left: 6px;
+    content: "|";
+    color: #bfbfbf;
+    font-weight: 500;
+}
+
+.footer > .footerCont > .footerCenter > .footerBusinessInfo > .businessInfo1 > .emphasis {
+    font-weight: bold;
+    color: #939393;
+}
+.footer > .footerCont > .footerCenter > .footerBusinessInfo > .businessInfo2 > span {
+    color: #939393;
+    font-size: 9px;
+    font-weight: 500;
+}
+.footer > .footerCont > .footerCenter > .footerBusinessInfo > .businessInfo2 > span:not(:last-child){
+    margin-right: 3px;
+}
+.footer > .footerCont > .footerCenter > .footerBusinessInfo > .businessInfo2 > span:not(:last-child)::after{
+    margin-left: 6px;
+    content: "|";
+    color: #c1c1c1;
+}
+.footer > .footerCont > .footerSns{
+    margin-top: 1.8229vw;
+}
+.footer > .footerCont > .footerSns > div {
+    display: inline-block;
+}
+.footer > .footerCont > .footerSns > div > i {
+    font-size: 22px;
+    color: #c1c1c1;
+    margin-left: 0.78vw;
+    transition: 0.3s;
+}
+.footer > .footerCont > .footerSns > div :hover {
+    color: #686868;
+}
+.footer > .footerCont {
+    display: grid;
+    grid-template-columns: 65.62vw 32.38vw;
+}
+.footerTermsOfUseTablet { display: none; }
+.footerBusinessInfoTablet { display: none; }
+.footerTermsOfUseApp { display: none; }
+
+
+/* drawer_menu */
+
+#drawer_menu {
+    display: none;
+}
+

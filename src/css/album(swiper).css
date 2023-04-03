@@ -1,0 +1,600 @@
+html {scroll-behavior: smooth;}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.blank {
+    height: 150px;
+}
+#container { 
+    background-color: #f7f7f7;
+    width: 100%;
+}
+.main_album_text {
+    width: 525px;
+    height: 525px;
+    background-color: #f0f0f0;
+    display: inline-block;
+}
+.top_sale_Page {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.singer > p { 
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    transform: translate(172%,-55%);
+}
+.boldLine img {
+    position: absolute;
+    transform: translate(-50%,47.9%);
+}
+.main_album_text > p {
+    margin: 70px 80px 20px 80px;
+}
+.comment { 
+    font-size: 14px;
+    line-height: 19px;
+    padding-top: 50px;
+}
+.album_title, .price{ 
+    font-size: 20px; 
+    font-weight: bold;
+}
+.countBtn > .count_num {
+    width: 40px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    font-weight: bold;
+    /*background-color: #e1e1e1;*/
+    border: none;
+    margin: 0;
+    float: left;
+    font-size: 18px;
+}
+.countBtn > .plusBtn , .minusBtn {
+    width: 33px;
+    height: 33px;
+    background-color: none;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid #b4b4b6;
+    margin: 0;
+    float: left;
+}
+.countBtn {
+    display: inline-block;
+    margin-left: 80px;
+    margin-right: 10px;
+
+}
+.add_to_cart_btn, .buy_now_btn {
+    display: inline-block;
+    background-color: #b4b4b6;
+    width: 113px;
+    height: 33px;
+    font-size: 11px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-left: 5px;
+}
+.buyBtn{
+    float: right;
+    margin-right: 80px;
+}
+.report{
+
+    display: block;
+    width: 1050px;
+    margin: 0 auto;
+}
+.contents{
+    background-color: none;
+    width: 1050px;
+    height: 155px;
+    padding: 27px;
+    border-top: 1px solid #bfbfbf;
+}
+.album_spec, .artist_introduction, .question {
+    display: inline-block;
+    width: 350px;
+    height: 62px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 62px;
+    font-size: 15px;
+}
+.album_spec {
+    float: left;
+}
+.artist_introduction{
+    float: left;
+}
+.question{ clear: both; }
+.report{ position: relative; }
+.select_line{
+    position: absolute;
+    top: 50px;
+}
+.type { text-align: center; }
+.type>li{
+    font-size: 13px;
+    padding: 2px;
+}
+
+.albumDetail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.albumDetailRight{
+    width: 690px;
+    height: 330px;
+}
+.albumDetailRight > .subTitle{
+    padding: 45px;
+    border-top: 3px solid black;
+}
+.titleTxt > h4 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.albumArtist > span {
+    font-size: 11px;
+    margin-right: 10px;
+}
+.albumArtist > span:not(:last-child)::after{
+    display: inline-block;
+    margin-left: 10px;
+    content: "|";
+}
+.txtBox { margin-top: 30px; }
+.txtBox p strong {
+    font-size: 14px;
+    line-height: 20px;
+}
+.txtBox p {
+    font-size: 13px;
+    margin-bottom: 18px;
+    line-height: 20px;
+}
+.txtBox .viewMore summary {
+    font-size: 11px;
+    font-weight: bold;
+    color: black;
+}
+.viewMore summary::marker{ font-size: 0; }
+.viewMore summary, .minusBtn, .plusBtn, .add_to_cart_btn, .buy_now_btn, .album_spec, .artist_introduction, .question, .add, .leftBtn, .rightBtn { cursor: pointer; }
+.trackList {
+    width: 1050px;
+    height: 730px;
+    
+}
+.trackListTitle h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 100px 0 20px 0;
+    font-family: 'GmarketSansMedium';
+}
+.trackListLine{
+    background-color: black;
+    width: 1050px;
+    height: 3px;
+}
+
+input[id="cb"] + label, input[id="cb1"] + label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bcbcbc;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"] + label{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #707070;
+    border-radius: 4px;
+    margin: 0 30px;
+}
+input[id="cb"]:checked + label::after, input[id="cb1"]:checked + label::after{
+    content:'✔';
+    font-size: 15px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    left: 30px;
+    top: 988px;
+}
+
+.musicPlayBar > .checkBox, .trackList1 {
+    width: 1050px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    
+}
+.musicPlayBar > .checkBox > div {
+    display: inline-block;
+    margin: 30px 3px;
+    padding: 2px 11px;
+    border-radius: 18px;
+    border: 1px solid #a4a4a4;
+}
+
+.musicPlayBar > .checkBox > div > span{
+    font-size: 11px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+.checkBox > div > i {
+    font-size: 8px;
+    color: #7b7b7b;
+}
+.musicPlayBar> .trackListLine1 {
+    height: 1px;
+    width: 1050px;
+    background-color: #b1b1b1;
+}
+.musicPlayBar > .trackList1 > div {
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 2px 11px;
+    border-radius: 18px;
+}
+
+.musicPlayBar > .trackList1 > div > i {
+    position: relative;
+    top: 2px;
+}
+
+.trackListSongSinger { width: 220px; }
+.trackListNum{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 70px;
+}
+div > .song{ 
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    width: 200px;
+}
+.trackList1 > div > .singer{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 3px;
+    width: 200px;
+}
+.trackListAlbum{
+    font-size: 13px;
+    font-weight: 600;
+    width: 270px;
+}
+.trackListHeart{
+    font-size: 13px;
+    font-weight: 500;
+    width: 100px;
+}
+.icon > div { 
+    display: inline-block;
+    margin-left: 40px;
+}
+.icon > .play { margin-left: 50px; }
+
+
+.detailPage > .newJeansPage img{ width: 100%; }
+
+
+.aboutVideo { margin-top: 100px; }
+.videoTop { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; 
+}
+.videoTop > .videoTopLeft > .titleText , .reviewTop > .reviewTopLeft > .titleText { font-size: 25px; }
+.videoTop > .videoTopLeft > .titleLine , .reviewTop > .reviewTopLeft > .titleLine { 
+    position: relative; 
+    top: -5px; 
+    margin-right: 10px; 
+}
+.aboutVideo > .swiper > .swiper-wrapper > .swiper-slide > .videoName { 
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.aboutVideo > .swiper > .swiper-wrapper > .swiper-slide > .singerName {
+    margin: 3px 0 8px 0;
+    font-size: 12px;
+}
+.aboutVideo > .swiper > .swiper-wrapper >.swiper-slide > .hits > span {
+    margin-top: 3px;
+    margin-right: 5px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.aboutVideo > .swiper > .swiper-wrapper >.swiper-slide > .hits > .hitsNum,.heartNum { color: #999999; }
+.aboutVideo > .swiper > .swiper-wrapper >.swiper-slide > .hits > span > i { font-size: 11px; margin-left: 5px; }
+.aboutVideo > .swiper > .swiper-wrapper >.swiper-slide > img { width: 250px; }
+.aboutVideo > .swiper > .swiper-wrapper >.swiper-slide { 
+    display: inline-block;
+
+}
+
+.aboutVideo > .swiper { 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+
+
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+
+    }
+
+
+  @media (max-width: 760px) {
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.commentSection {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: 40px 0; 
+    position: relative;
+}
+.commentSection > .profile { margin-right: 20px; }
+.commentSection > .writeComment > #writeComment { 
+    border-radius: 13px; 
+    background-color: #f7f7f7;
+    resize: none;
+    overflow: hidden;
+    padding: 20px 50px 20px 20px;
+}
+
+.commentSection > div > #submitBtn { 
+    border: none;
+    background-color: #f7f7f7;
+    position: absolute;
+    transform: translate(-143%,-15%);
+    padding: 15px 0px 0px 15px;
+    cursor: pointer;
+    color: #828282;
+    font-weight: bold;
+}
+.wholeReview > .totalReview > span { 
+    font-size: 16px;
+    font-weight: bold; 
+}
+.wholeReview > .totalReview > .totalReviewNum { 
+    margin-left: 5px;
+    color: #4ab957; 
+}
+.aboutReview > .wholeReview {
+    display: flex;
+    justify-content: space-between;
+}
+.aboutReview > .wholeReview > .reviewOrder > span:not(:last-child)::after { 
+    content: "|";
+    margin: 0 5px; 
+    color: #828282;
+}
+.aboutReview > .wholeReview > .reviewOrder > span:not(:first-child){
+    color: #828282;
+    font-size: 14px;
+}
+.aboutReview > .wholeReview > .reviewOrder > span:first-child {
+    font-weight: bold;
+    font-size: 14px;
+}
+.reviewLine { 
+    width: 1050px; 
+    height: 1px;
+    background-color: #b1b1b1;
+    margin-top: 10px;
+}
+.aboutReview { 
+    width: 1050px;
+    height: 1200px;
+    margin-top: 100px; 
+}
+
+
+.recentReview { 
+    width: 1050px;
+    height: 200px;
+    border-bottom: 1px solid #b1b1b1 ;
+    position: relative;
+}
+.otherReview > .recentReview {
+    display: grid;
+    grid-template-columns: 195px 100px 1fr 110px;
+    grid-template-rows: 1fr;
+}
+.otherReview > .recentReview > .profile > img { width: 70px; height: 71px; }
+.otherReview > .recentReview > .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.otherReview > .recentReview > .userId { 
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5c5c5c; 
+}
+.otherReview > .recentReview > .userId > i { 
+    margin-left: 3px; 
+}
+.otherReview > .recentReview > .writeReview {
+    margin: 25px 0;
+}
+.otherReview > .recentReview > .writeReview > .reviewText {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5c5c5c;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.otherReview > .recentReview > .writeReview > .reviewDay {
+    font-size: 12px;
+    font-weight: bold;
+    color: #828282;
+}
+.otherReview > .recentReview > .writeReview > .reReview{ 
+    position: absolute;
+    transform: translate(0,45px);
+}
+.otherReview > .recentReview > .writeReview > .reReview2{ 
+    position: absolute;
+    transform: translate(0,90px);
+}
+.otherReview > .recentReview > .writeReview > .reReview > span{ 
+    font-size: 14px;
+    font-weight: bold;
+    color: #5c5c5c;
+
+}
+.otherReview > .recentReview > .writeReview > .reReview > i {
+    font-size: 14px;
+    color: #5c5c5c;
+}
+.otherReview > .recentReview > .writeReview > .reReview2 > span{ 
+    font-size: 14px;
+    font-weight: bold;
+    color: #5c5c5c;
+
+}
+.otherReview > .recentReview > .writeReview > .reReview2 > i {
+    font-size: 14px;
+    color: #5c5c5c;
+}
+.otherReview > .recentReview > .likeOrHate {
+    display: flex;
+    align-items: end;
+    margin: 0 20px 20px 0;
+}
+.otherReview > .recentReview > .likeOrHate > .like{ 
+    margin-right: 20px;
+}
+.otherReview > .recentReview > .likeOrHate > .like > i > span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #5c5c5c;
+}
+.otherReview > .recentReview > .likeOrHate > .hate > i > span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #5c5c5c;
+}
+.otherReview > .recentReview > .likeOrHate > .like > i {
+    color: #c52d2d;
+}
+.otherReview > .recentReview > .likeOrHate > .hate > i {
+    color: #0d41a2;
+}
+.reviewPage { margin-top: 40px; text-align: center; }
+.otherReview > .reviewPage > span {
+    font-size: 14px;
+    color: #828282;
+    text-align: center;
+}
+.otherReview > .reviewPage > span:not(:first-child)::before {
+    content: "|";
+    margin: 0 4px;
+    color: #828282;
+}
+.otherReview > .reviewPage> span:first-child {
+    font-weight: bold;
+}
+
+
+
+
+
+.add_to_cart_btn,.buy_now_btn {
+   z-index: 1;
+    -webkit-transition: all 0.3s linear;
+   transition: all 0.3s linear;
+ }
+ .add_to_cart_btn:hover , .buy_now_btn:hover {
+    box-shadow: 0 80px 0 0 #00c93c75 inset, 
+                0 -80px 0 0 #00c93c75 inset;
+   color: #fff;
+ }
+ .add_to_cart_btn:before,
+ .add_to_cart_btn:after, .buy_now_btn:before,.buy_now_btn:after {
+
+   left: 0;
+   width: 100%;
+   height: 50%;
+   right: 0;
+   z-index: -1;
+   background: #000;
+   transition: all 0.3s ease;
+ }
+ .add_to_cart_btn:before, .buy_now_btn:before {
+   top: 0;
+ }
+ .add_to_cart_btn:after,  .buy_now_btn:after  {
+   bottom: 0;
+ }
+ .add_to_cart_btn:hover:before,.add_to_cart_btn:hover:after, .buy_now_btn:hover:before, .buy_now_btn:hover:after  {
+   height: 0;
+   background-color: #a8b6c1;
+ }
+
+ .csh98419 {
+    font-weight: bold;
+    border-bottom: 3px solid black;
+ }
