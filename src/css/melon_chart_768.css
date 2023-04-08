@@ -30,7 +30,7 @@
     }
 
     .swiper {
-        padding-top: 5rem;
+        padding-top: 10.4vw;
         height: 100%; width: 100%;
         margin-left: 0 !important;
     }
@@ -210,7 +210,7 @@
         border-radius: 23vw;
         font-size: 3vw;
         line-height: 5.25vw;
-        border-width: 2px;
+        border-width: 1px;
         text-align: center;
     }
 

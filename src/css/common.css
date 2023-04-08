@@ -86,13 +86,13 @@ a { text-decoration: none; }
 }
 
 .header .header_menu .header_menu_1024 .header_menu_button {
-    width: 55px;
+    width: 3.5rem;
     cursor: pointer;
 }
 
 .header .header_menu .header_menu_1024 .header_menu_button .menu_button {
     display: block;
-    border-top: .5vw solid #fff;
+    border-top: 3.5px solid #fff;
     border-radius: .5vw;
 }
 
@@ -156,7 +156,7 @@ a { text-decoration: none; }
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
 
     .melon_bar { 
         border-top: 8px solid #02cd39;
@@ -177,16 +177,16 @@ a { text-decoration: none; }
     }
 
     .header .header_menu .header_menu_1024 .header_menu_button {
-        width: 76px;
+        width: 11vw;
     }
     
     .header .header_menu .header_menu_1024 .header_menu_button .menu_button {
-        border-top: 5px solid #fff;
+        border-top: 3.5px solid #fff;
         border-radius: 3px;
     }
     
     .header .header_menu .header_menu_1024 .header_menu_button .menu_button:not(:first-child) {
-        margin-top: 18px;
+        margin-top: 2vw;
     }
     
     .header .header_menu .header_menu_1024 .header_menu_button .menu_button1 { width: 100%; }

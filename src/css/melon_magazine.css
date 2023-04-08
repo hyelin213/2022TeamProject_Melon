@@ -10,6 +10,10 @@
     }
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* 소연 사이드 메뉴 => 고정화 */
 
 #drawer_menu {
