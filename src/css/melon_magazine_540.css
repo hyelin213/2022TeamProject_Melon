@@ -1,5 +1,9 @@
 @media screen and (max-width: 540px){
 
+    .view768 {
+        display: block;
+    }
+
     /* 소연 사이드 메뉴 => 고정화 */
     
     #drawer_menu .fa-xmark.menu_opner {
@@ -275,7 +279,6 @@
 
     #other_contents .category_select h3 {
         font-size: 5vw;
-        width: 15vw;
         line-height: 7vw;
     }
 
