@@ -417,7 +417,7 @@
     window.addEventListener('resize', () => {
         clearTimeout(timer);
         timer = setTimeout(() => {
-            if(window.innerWidth < 1025 && window.innerWidth >= 769){
+            if(window.innerWidth < 1025 && window.innerWidth >= 541){
                 moreBtn.classList.remove('d-none');
                 for(let i=8; i<moreLi.length; i++){
                     moreLi[i].classList.add('d-none');

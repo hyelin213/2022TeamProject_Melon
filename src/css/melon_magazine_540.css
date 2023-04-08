@@ -1,28 +1,71 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 540px){
 
     /* 소연 사이드 메뉴 => 고정화 */
+    
+    #drawer_menu .fa-xmark.menu_opner {
+        position: fixed;
+        margin-left: max(55.185vw, 196px);
+        font-size: 7.4vw;
+    }
 
-    /* .side_menu {
+    #drawer_menu .side_menu > img {
+        margin: 13.88vw 0 0 11vw;
+        width: 20vw;
+        height: 5.5vw;
+    }
+    
+    #drawer_menu .side_menu {
         position: relative;
-        width: 100vw; height: 100%;
+        width: 54.63vw;
+        min-width: 200px;
+        height: 100%;
+        background-color: #e7e7e79a;
+        box-shadow: 0 0 36px 0 rgba(0,0,0,0.1);
+        transition: all 0.4s ease-out;
+        backdrop-filter: blur(20px);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
-
-    .side_menu > ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 5rem) 1fr 5rem;
-        width: 70vw; margin: 130px auto;
+    
+    #drawer_menu .side_menu > ul {
+        margin-top: 7vw;
     }
-
-    .side_menu ul > ul {
-        display: none;
-        grid-column: span 2;
+    
+    #drawer_menu .menu__title {
+        display: block;
+        padding: 14px 0;
+        margin-left: 11vw;
+        font-size: 3.7vw;
     }
-
-    .Myhome__list { margin-top: 10px; }
-    .list__item {
-        margin-left: 60px;
-    } */
+    
+    #drawer_menu a {
+        color: black !important;
+    }
+    
+    #drawer_menu #check_btn { 
+        display: none; 
+    }
+    
+    #drawer_menu #check_btn:checked ~ .Myhome__list { 
+        display: block;
+    } 
+    
+    #drawer_menu .Myhome__list { 
+        display: none; 
+    }
+    
+    #drawer_menu .list__item {
+        display: block;
+        padding: 1.85vw 0;
+        margin-left: 14.8vw;
+        font-size: 3.703vw;
+    }
+    
+    #drawer_menu #header_menu_id {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
     /* --------------------------------------- */
 
@@ -32,7 +75,7 @@
 
     .main_magazine_menu ul {
         flex-direction: row;
-        margin: 33.4vw 6vw 0 0 !important;
+        margin: 20vw 6vw 0 0 !important;
         color: #383838 !important;
         font-weight: bold;
         font-size: 4vw !important;
@@ -213,6 +256,7 @@
     
     #other_contents .category_select {
         display: flex;
+        justify-content: center;
     }
 
     #other_contents .category_select .more, 
@@ -226,15 +270,13 @@
 
     #other_contents .category_select {
         position: relative;
-        width: 90.1vw;
-        margin: 0;
+        width: 100%;
     }
 
     #other_contents .category_select h3 {
         font-size: 6.9vw;
         width: 21vw;
         line-height: 8.5vw;
-        margin-left: 11.8vw;
     }
 
     #other_contents .category_select .select_category768 {

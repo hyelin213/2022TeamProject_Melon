@@ -202,6 +202,10 @@
         width: 42.38vw !important;
     }
 
+    #middle_contents .today_magazine .right_contents .swiper-pagination {
+        display: none;
+    }
+
     .heart {
         left: 2vw; bottom: 1.8vw;
     }
@@ -287,7 +291,7 @@
 
     /* #other_contents */
 
-    #other_contents { margin-top: 65vw; }
+    #other_contents { margin-top: 55vw; }
 
     #other_contents .category_select {
         width: 90.1vw;
@@ -486,6 +490,28 @@
         cursor: pointer;
     }
     #container .top .fa-arrow-up { line-height: 4vw;}
+
+    #container .top {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #919191;
+        border-radius: 2.43rem;
+        width: 2.43rem; height: 2.43rem;
+        position: fixed;
+        bottom: 5vw; right: 5vw;
+        transition: .1s;
+        cursor: pointer;
+    }
+    #container .top:hover {
+        bottom: 5.5vw;
+    }
+    
+    #container .top .fa-arrow-up {
+        width: 100%; height: 100%;
+        text-align: center;
+        line-height: 2.43rem;
+        color: #636363;
+    }
 
     /* 현주 footer */
 

@@ -52,7 +52,9 @@
 }
 
 #drawer_menu .side_menu > ul {
-    margin-top: 60px;
+    margin-top: 40px;
+    height: 70vh;
+    overflow: scroll;
 }
 
 #drawer_menu .menu__title {
@@ -62,12 +64,8 @@
     font-size: 22px;
 }
 
-#drawer_menu a:visited {
+#drawer_menu a {
     color: black;
-}
-
-#drawer_menu a:active {
-    color: #a8a8a8;
 }
 
 #drawer_menu #check_btn { 
@@ -651,8 +649,8 @@
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #919191;
-    border-radius: 2.4vw;
-    width: 2.4vw; height: 2.4vw;
+    border-radius: 2.8rem;
+    width: 2.8rem; height: 2.8rem;
     position: fixed;
     bottom: 5vw; right: 5vw;
     transition: .1s;
@@ -660,12 +658,13 @@
 }
 #container .top:hover {
     bottom: 5.5vw;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #container .top .fa-arrow-up {
     width: 100%; height: 100%;
     text-align: center;
-    line-height: 2.4vw;
+    line-height: 2.8rem;
     color: #636363;
 }
 

@@ -287,7 +287,7 @@
                             <label for="chartDetail${i+1}"></label>
                         </li>
                         <li class="chart_detail_list2">
-                            <p>${i+1}</p>
+                            <p>${i+4}</p>
                             <div class="chart_upDown">-</div>
                         </li>
                         <li class="chart_detail_list3">

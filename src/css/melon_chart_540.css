@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 540px){
 
     /* 768px 이하 */
 
@@ -19,6 +19,73 @@
             opacity: 3;
             transform: none;
         }
+    }
+
+    /* 소연 사이드 메뉴 => 고정화 */
+    
+    #drawer_menu .fa-xmark.menu_opner {
+        position: fixed;
+        margin-left: max(55.185vw, 196px);
+        font-size: 7.4vw;
+    }
+
+    #drawer_menu .side_menu > img {
+        margin: 13.88vw 0 0 11vw;
+        width: 20vw;
+        height: 5.5vw;
+    }
+    
+    #drawer_menu .side_menu {
+        position: relative;
+        width: 54.63vw;
+        min-width: 200px;
+        height: 100%;
+        background-color: #e7e7e79a;
+        box-shadow: 0 0 36px 0 rgba(0,0,0,0.1);
+        transition: all 0.4s ease-out;
+        backdrop-filter: blur(20px);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    #drawer_menu .side_menu > ul {
+        margin-top: 7vw;
+    }
+    
+    #drawer_menu .menu__title {
+        display: block;
+        padding: 14px 0;
+        margin-left: 11vw;
+        font-size: 3.7vw;
+    }
+    
+    #drawer_menu a {
+        color: black !important;
+    }
+    
+    #drawer_menu #check_btn { 
+        display: none; 
+    }
+    
+    #drawer_menu #check_btn:checked ~ .Myhome__list { 
+        display: block;
+    } 
+    
+    #drawer_menu .Myhome__list { 
+        display: none; 
+    }
+    
+    #drawer_menu .list__item {
+        display: block;
+        padding: 1.85vw 0;
+        margin-left: 14.8vw;
+        font-size: 3.703vw;
+    }
+    
+    #drawer_menu #header_menu_id {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .rank_list .no_swiper li { display: none; }
