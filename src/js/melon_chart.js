@@ -130,6 +130,14 @@
         });
     });
 
+    // 새로고침 기능
+
+    const refresh = document.querySelector('.select_option_refresh');
+
+    refresh.addEventListener('click', () => {
+        location.reload(true);
+    });
+
 
     // other_list_chart li 반복
     
