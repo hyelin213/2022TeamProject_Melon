@@ -74,24 +74,26 @@
 
     // 메뉴 선택 효과 (시대 제외)
 
-    const mainLiMenu = document.querySelector('#main_menu');
+    const mainLiMenu = document.querySelectorAll('#main_menu li');
     const mainTitle = document.querySelector('#main_title h1');
 
-    mainLiMenu.addEventListener('click', e => {
-        e.target.classList.add('selected');
-        mainTitle.textContent = e.target.textContent;
-
-        if(e.target === mainLiMenu.children[4]){
-            alert('추후 공개되는 페이지입니다.');
-            mainTitle.textContent = mainLiMenu.children[0].textContent;
-            location.reload();
-        }   
-
-        for(let i=0; i<mainLiMenu.children.length; i++){
-            if(e.target.className = 'selected'){
-                mainLiMenu.children[i].classList.remove('selected');
+    mainLiMenu.forEach(item => {
+        item.addEventListener('click', e => {
+            e.target.classList.add('selected');
+            mainTitle.textContent = e.target.textContent;
+    
+            if(e.target === mainLiMenu[4]){
+                alert('추후 공개되는 페이지입니다.');
+                mainTitle.textContent = mainLiMenu[0].textContent;
+                location.reload();
+            }   
+    
+            for(let i=0; i<mainLiMenu.length; i++){
+                if(e.target.className = 'selected'){
+                    mainLiMenu[i].classList.remove('selected');
+                }
             }
-        }
+        });
     });
 
     // ❤좋아요 기능(랭커)
