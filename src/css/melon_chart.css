@@ -640,12 +640,12 @@
     border-radius: 2.8rem;
     width: 2.8rem; height: 2.8rem;
     position: fixed;
-    bottom: 5vw; right: 5vw;
+    bottom: 2vw; right: 2vw;
     transition: .1s;
     cursor: pointer;
 }
 #container .top:hover {
-    bottom: 5.5vw;
+    bottom: 2.5vw;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
