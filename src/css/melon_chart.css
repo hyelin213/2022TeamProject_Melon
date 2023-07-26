@@ -125,18 +125,6 @@
     font-weight: bold; color: #fff;
 }
 
-#main #main_title span {
-    position: absolute;
-    color: #cacaca;
-    font-size: .6vw; line-height: 1.1vw;
-    text-align: center;
-    border: 1px solid #cacaca;
-    border-radius: 1.2vw;
-    width: 1.2vw; height: 1.2vw;
-    top: 2.5vw; left: 0;
-    cursor: pointer;
-}
-
 /* #main > #main_title > .main_selectTime 오늘날짜 표시 & 이전 시간 선택 */
 
 #main_title .main_today {

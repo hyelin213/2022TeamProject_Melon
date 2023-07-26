@@ -144,13 +144,6 @@
         font-size: 9.2vw;
     }
 
-    #main #main_title span {
-        font-size: 2.5vw; line-height: 4.9vw;
-        border-radius: 4.9vw;
-        width: 4.9vw !important; height: 4.9vw;
-        margin-top: 1.1vw;
-    }
-
     #main_title .main_today {
         margin: 5vw 0 0 0;
         font-size: 6vw;

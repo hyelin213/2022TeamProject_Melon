@@ -52,15 +52,6 @@
         display: inline-block;
     }
 
-    #main #main_title span {
-        position: static;
-        display: inline-block;
-        font-size: 1.1vw; line-height: 2.1vw;
-        border-radius: 2.2vw;
-        width: 2.2vw !important; height: 2.2vw;
-        margin-left: 1.8vw;
-    }
-
     #main_title .main_today {
         margin-left: 0;
         font-size: 4vw;
